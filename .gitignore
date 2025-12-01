@@ -1,3 +1,14 @@
+# Ignore this folder
+dataset/
+fhir_server/
+
+# Ignore these files (for surely)
+*.zip
+*.sif
+
+# Ignore Hugging Face token
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
