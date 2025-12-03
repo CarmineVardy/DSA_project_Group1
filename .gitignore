@@ -1,12 +1,13 @@
 # Ignore this folder
 dataset/
 fhir_server/
+server_storage/
 
 # Ignore these files (for surely)
 *.zip
 *.sif
 
-# Ignore Hugging Face token
+# Ignore environment content
 .env
 
 # Byte-compiled / optimized / DLL files
