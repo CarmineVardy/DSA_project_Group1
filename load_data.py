@@ -2,14 +2,12 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-
 import json
 import requests
 import sys
 
 DATASET_PATH = os.getenv("DATASET_PATH")
 SERVER_URL = os.getenv("SERVER_URL")
-
 
 def upload_fhir_bundles():
     # Construct the full path to the 'fhir' subdirectory inside the dataset path
