@@ -6,9 +6,11 @@ server_storage/
 # Ignore these files (for surely)
 *.zip
 *.sif
+*.sh
 
 # Ignore environment content
 .env
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
