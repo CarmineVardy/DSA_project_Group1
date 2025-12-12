@@ -2,6 +2,7 @@
 dataset/
 fhir_server/
 server_storage/
+info_unique_resources/
 
 # Ignore these files (for surely)
 *.zip
