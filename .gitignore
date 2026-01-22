@@ -2,7 +2,7 @@
 dataset/
 fhir_server/
 server_storage/
-info_unique_resources/
+server_storage_Carmine/
 
 # Ignore these files (for surely)
 *.zip
