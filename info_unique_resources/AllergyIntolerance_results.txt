@@ -1,0 +1,18 @@
+Report generated for: AllergyIntolerance
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 14
+==================================================
+Allergy to bee venom
+Allergy to dairy product
+Allergy to eggs
+Allergy to fish
+Allergy to grass pollen
+Allergy to mould
+Allergy to nut
+Allergy to peanuts
+Allergy to tree pollen
+Allergy to wheat
+Dander (animal) allergy
+House dust mite allergy
+Latex allergy
+Shellfish allergy

@@ -1,0 +1,147 @@
+Report generated for: Condition
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 143
+==================================================
+Abnormal gait (finding)
+Acute Cholecystitis
+Acute allergic reaction
+Acute bacterial sinusitis (disorder)
+Acute bronchitis (disorder)
+Acute viral pharyngitis (disorder)
+Alcoholism
+Alzheimer's disease (disorder)
+Anemia (disorder)
+Antepartum eclampsia
+Appendicitis
+Asthma
+Atopic dermatitis
+Atrial Fibrillation
+Bleeding from anus
+Blighted ovum
+Blindness due to type 2 diabetes mellitus (disorder)
+Body mass index 30+ - obesity (finding)
+Body mass index 40+ - severely obese (finding)
+Brain damage - traumatic
+Bullet wound
+Carcinoma in situ of prostate (disorder)
+Cardiac Arrest
+Child attention deficit disorder
+Childhood asthma
+Cholelithiasis
+Chronic congestive heart failure (disorder)
+Chronic intractable migraine without aura
+Chronic kidney disease stage 1 (disorder)
+Chronic kidney disease stage 2 (disorder)
+Chronic kidney disease stage 3 (disorder)
+Chronic obstructive bronchitis (disorder)
+Chronic pain
+Chronic paralysis due to lesion of spinal cord
+Chronic sinusitis (disorder)
+Closed fracture of hip
+Concussion injury of brain
+Concussion with loss of consciousness
+Concussion with no loss of consciousness
+Coronary Heart Disease
+Cystitis
+Diabetes
+Diabetic renal disease (disorder)
+Diabetic retinopathy associated with type II diabetes mellitus (disorder)
+Drug overdose
+Dysarthria (finding)
+Epilepsy
+Escherichia coli urinary tract infection
+Facial laceration
+Familial Alzheimer's disease of early onset (disorder)
+Fetus with unknown complication
+First degree burn
+Fracture of ankle
+Fracture of clavicle
+Fracture of forearm
+Fracture of rib
+Fracture of the vertebral column with spinal cord injury
+Fracture of vertebral column without spinal cord injury
+Fracture subluxation of wrist
+Gout
+History of amputation of foot (situation)
+History of appendectomy
+History of cardiac arrest (situation)
+History of lower limb amputation (situation)
+History of myocardial infarction (situation)
+History of single seizure (situation)
+Hyperglycemia (disorder)
+Hyperlipidemia
+Hypertension
+Hypertriglyceridemia (disorder)
+Idiopathic atrophic hypothyroidism
+Impacted molars
+Impaired cognition (finding)
+Injury of anterior cruciate ligament
+Injury of medial collateral ligament of knee
+Injury of tendon of the rotator cuff of shoulder
+Laceration of foot
+Laceration of forearm
+Laceration of hand
+Laceration of thigh
+Localized, primary osteoarthritis of the hand
+Lupus erythematosus
+Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)
+Major depression disorder
+Malignant neoplasm of breast (disorder)
+Malignant tumor of colon
+Metabolic syndrome X (disorder)
+Metastasis from malignant tumor of prostate (disorder)
+Microalbuminuria due to type 2 diabetes mellitus (disorder)
+Miscarriage in first trimester
+Monoparesis - arm (disorder)
+Myocardial Infarction
+Neoplasm of prostate
+Neuropathy due to type 2 diabetes mellitus (disorder)
+Non-small cell carcinoma of lung, TNM stage 1 (disorder)
+Non-small cell lung cancer (disorder)
+Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)
+Normal pregnancy
+Numbness of face (finding)
+Opioid abuse (disorder)
+Osteoarthritis of hip
+Osteoarthritis of knee
+Osteoporosis (disorder)
+Otitis media
+Overlapping malignant neoplasm of colon
+Pathological fracture due to osteoporosis (disorder)
+Perennial allergic rhinitis
+Perennial allergic rhinitis with seasonal variation
+Pneumonia
+Polyp of colon
+Prediabetes
+Preeclampsia
+Primary fibromyalgia syndrome
+Primary malignant neoplasm of colon
+Primary small cell malignant neoplasm of lung, TNM stage 1 (disorder)
+Proliferative diabetic retinopathy due to type II diabetes mellitus (disorder)
+Proteinuria due to type 2 diabetes mellitus (disorder)
+Protracted diarrhea
+Pulmonary emphysema (disorder)
+Recurrent rectal polyp
+Recurrent urinary tract infection
+Rheumatoid arthritis
+Rupture of appendix
+Rupture of patellar tendon
+Seasonal allergic rhinitis
+Second degree burn
+Seizure disorder
+Shock (disorder)
+Silent micro-hemorrhage of brain (disorder)
+Sinusitis (disorder)
+Small cell carcinoma of lung (disorder)
+Smokes tobacco daily
+Sprain of ankle
+Sprain of wrist
+Streptococcal sore throat (disorder)
+Stroke
+Suspected lung cancer (situation)
+Tear of meniscus of knee
+Third degree burn
+Traumatic brain injury (disorder)
+Tubal pregnancy
+Viral sinusitis (disorder)
+Whiplash injury to neck

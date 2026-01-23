@@ -1,0 +1,280 @@
+Report generated for: Observation
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 276
+==================================================
+ALT (Elevated)
+AST (Elevated)
+Abuse Status [OMAHA]
+Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+Albumin
+Albumin [Mass/volume] in Serum or Plasma
+Alkaline Phosphatase
+Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma
+American house dust mite IgE Ab in Serum
+Anion Gap
+Appearance of Urine
+Are you covered by health insurance or some other kind of health care plan [PhenX]
+Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+Bilirubin.total [Mass/volume] in Serum or Plasma
+Bilirubin.total [Mass/volume] in Urine by Test strip
+Bilirubin.total [Presence] in Urine by Test strip
+Blood Pressure
+Body Height
+Body Mass Index
+Body Weight
+Body mass index (BMI) [Percentile] Per age and gender
+Body temperature
+Calcium
+Calcium [Mass/volume] in Serum or Plasma
+Carbon Dioxide
+Carbon dioxide, total [Moles/volume] in Serum or Plasma
+Cat dander IgE Ab in Serum
+Cause of Death [US Standard Certificate of Death]
+Chloride
+Chloride [Moles/volume] in Serum or Plasma
+Cladosporium herbarum IgE Ab in Serum
+Clarity of Urine
+Codfish IgE Ab in Serum
+Color of Urine
+Common Ragweed IgE Ab in Serum
+Cow milk IgE Ab in Serum
+Creatinine
+Creatinine [Mass/volume] in Serum or Plasma
+DXA [T-score] Bone density
+Distant metastases.clinical [Class] Cancer
+Egg white IgE Ab in Serum
+Electrocardiographic procedure
+Erythrocyte distribution width [Entitic volume] by Automated count
+Erythrocyte distribution width [Ratio] by Automated count
+Erythrocytes [#/volume] in Blood by Automated count
+Estimated Glomerular Filtration Rate
+Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain
+Estrogen+Progesterone receptor Ag [Presence] in Tissue by Immune stain
+FEV1/FVC
+Ferritin [Mass/volume] in Serum or Plasma
+Functional capacity NYHA
+Globulin
+Globulin [Mass/volume] in Serum by calculation
+Glomerular filtration rate/1.73 sq M.predicted
+Glucose
+Glucose [Mass/volume] in Serum or Plasma
+Glucose [Mass/volume] in Urine by Test strip
+Glucose [Presence] in Urine by Test strip
+HER2 [Presence] in Breast cancer specimen by FISH
+HER2 [Presence] in Breast cancer specimen by Immune stain
+HIV status
+Head Occipital-frontal circumference
+Heart rate
+Hematocrit
+Hematocrit [Volume Fraction] of Blood
+Hematocrit [Volume Fraction] of Blood by Automated count
+Hemoglobin
+Hemoglobin A1c/Hemoglobin.total in Blood
+Hemoglobin [Mass/volume] in Blood
+Hemoglobin [Presence] in Urine by Test strip
+Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method
+High Density Lipoprotein Cholesterol
+History of Hospitalizations+Outpatient visits
+Honey bee IgE Ab in Serum
+Housing status
+Iron [Mass/volume] in Serum or Plasma
+Iron binding capacity [Mass/volume] in Serum or Plasma
+Iron saturation [Mass Fraction] in Serum or Plasma
+Ketones [Mass/volume] in Urine by Test strip
+Ketones [Presence] in Urine by Test strip
+Latex IgE Ab in Serum
+Left ventricular Ejection fraction
+Leukocyte esterase [Presence] in Urine by Test strip
+Leukocytes [#/volume] in Blood by Automated count
+Low Density Lipoprotein Cholesterol
+Lymph nodes with macrometastases [#] in Cancer specimen by Light microscopy
+Lymph nodes with micrometastases [#] in Cancer specimen by Light microscopy
+MCH [Entitic mass] by Automated count
+MCHC [Mass/volume] by Automated count
+MCV
+MCV [Entitic volume] by Automated count
+Magnesium [Mass/volume] in Serum or Plasma
+Microalbumin Creatinine Ratio
+NT-proBNP
+Nitrite [Presence] in Urine by Test strip
+Objective assessment of cardiovascular disease NYHA
+Odor of Urine
+Oxygen saturation in Arterial blood
+Pain severity - 0-10 verbal numeric rating [Score] - Reported
+Peanut IgE Ab in Serum
+Physical findings of Abdomen by Palpation
+Physical findings of Prostate
+Platelet Count
+Platelet distribution width [Entitic volume] in Blood by Automated count
+Platelet mean volume [Entitic volume] in Blood by Automated count
+Platelets [#/volume] in Blood by Automated count
+Polyp size greatest dimension by CAP cancer protocols
+Potassium
+Potassium [Moles/volume] in Serum or Plasma
+Primary tumor.clinical [Class] Cancer
+Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain
+Prostate specific Ag [Mass/volume] in Serum or Plasma
+Protein
+Protein [Mass/volume] in Serum or Plasma
+Protein [Mass/volume] in Urine by Test strip
+Protein [Presence] in Urine by Test strip
+RBC Auto (Bld) [#/Vol]
+RBC Distribution Width
+RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]
+Red Blood Cell
+Regional lymph nodes.clinical [Class] Cancer
+Respiratory rate
+Response to cancer treatment
+Sexual orientation
+Shrimp IgE Ab in Serum
+Site of distant metastasis in Breast tumor
+Size.maximum dimension in Tumor
+Sodium
+Sodium [Moles/volume] in Serum or Plasma
+Soybean IgE Ab in Serum
+Specific gravity of Urine by Test strip
+Stage group.clinical Cancer
+Symptom
+The ABCG2 gene exhibits a variation of 'Association' clinical significance. The variation at index rs2231137_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The ABCG2 gene exhibits a variation of 'Association' clinical significance. The variation at index rs2231137_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The ADD1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs4961_FS1 is associated with an increased risk of: Cardiovascular Issues, High LDL, Hemorrhagic Stroke, Hypertension and High Blood Pressure.
+The ADD1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs4961_FS2 is associated with an increased risk of: Cardiovascular Issues, High LDL, Hemorrhagic Stroke, Hypertension and High Blood Pressure.
+The ADRA2B gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2229169_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The ADRA2B gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2229169_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The ADRB2 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs1800888_FS1 is associated with an increased risk of: Ischemic Stroke.
+The ADRB2 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs1800888_FS2 is associated with an increased risk of: Ischemic Stroke.
+The ADRB3 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs4994_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The ADRB3 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs4994_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The AGT gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs699_FS1 is associated with an increased risk of: Ischemic Stroke, Pulmonary Hypertension and Cardiomyopathy.
+The AGT gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs699_FS2 is associated with an increased risk of: Ischemic Stroke, Pulmonary Hypertension and Cardiomyopathy.
+The AGTR1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs5186_FS1 is associated with an increased risk of: Ischemic Stroke, Cardiomyopathy, Hypertension, High Blood Pressure and Cardiac Arrest.
+The AGTR1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs5186_FS2 is associated with an increased risk of: Ischemic Stroke, Cardiomyopathy, Hypertension, High Blood Pressure and Cardiac Arrest.
+The ALOX15 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs34210653_FS1 is associated with an increased risk of: Ischemic Stroke.
+The ALOX15 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs34210653_FS2 is associated with an increased risk of: Ischemic Stroke.
+The ALOX5AP gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10507391_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The ALOX5AP gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10507391_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The APOA5 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs662799_FS1 is associated with an increased risk of: Cardiovascular Issues, Dsyslipidemia, Low HDL, Ischemic Stroke, Obesity and Heart Disease.
+The APOA5 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs662799_FS2 is associated with an increased risk of: Cardiovascular Issues, Dsyslipidemia, Low HDL, Ischemic Stroke, Obesity and Heart Disease.
+The APOC1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs4420638_FS1 is associated with an increased risk of: Cardiovascular Issues, Aortic Aneurysm, Dsyslipidemia, High LDL and Low HDL.
+The APOC1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs4420638_FS2 is associated with an increased risk of: Cardiovascular Issues, Aortic Aneurysm, Dsyslipidemia, High LDL and Low HDL.
+The APOE gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs429358_FS1 is associated with an increased risk of: Cardiovascular Issues, Arterial Occlusive Disease, Dsyslipidemia, High LDL and Aortic Aneurysm.
+The APOE gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs429358_FS2 is associated with an increased risk of: Cardiovascular Issues, Arterial Occlusive Disease, Dsyslipidemia, High LDL and Aortic Aneurysm.
+The BOLL gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs700651_FS1 is associated with an increased risk of: Aneurysm.
+The BOLL gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs700651_FS2 is associated with an increased risk of: Aneurysm.
+The CCL2 gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs1024611_FS1 is associated with an increased risk of: Ischemic Stroke and Pulmonary Hypertension.
+The CCL2 gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs1024611_FS2 is associated with an increased risk of: Ischemic Stroke and Pulmonary Hypertension.
+The CDKN2B, CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3217992_FS1 is associated with an increased risk of: Ischemic Stroke.
+The CDKN2B, CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3217992_FS2 is associated with an increased risk of: Ischemic Stroke.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10757272_FS1 is associated with an increased risk of: Aneurysm.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10757272_FS2 is associated with an increased risk of: Aneurysm.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10757274_FS1 is associated with an increased risk of: Cardiovascular Issues, Ischemic Stroke, Heart Disease, Aneurysm and Aortic Aneurysm.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10757274_FS2 is associated with an increased risk of: Cardiovascular Issues, Ischemic Stroke, Heart Disease, Aneurysm and Aortic Aneurysm.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1333040_FS1 is associated with an increased risk of: Ischemic Stroke and Aneurysm.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1333040_FS2 is associated with an increased risk of: Ischemic Stroke and Aneurysm.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2383206_FS1 is associated with an increased risk of: Cardiovascular Issues, Heart Disease and Ischemic Stroke.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2383206_FS2 is associated with an increased risk of: Cardiovascular Issues, Heart Disease and Ischemic Stroke.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2383207_FS1 is associated with an increased risk of: Cardiovascular Issues, Aneurysm, Aortic Aneurysm and Ischemic Stroke.
+The CDKN2B-AS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2383207_FS2 is associated with an increased risk of: Cardiovascular Issues, Aneurysm, Aortic Aneurysm and Ischemic Stroke.
+The CRP gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3093059_FS1 is associated with an increased risk of: Cardiovascular Issues, Hemorrhagic Stroke and Ischemic Stroke.
+The CRP gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3093059_FS2 is associated with an increased risk of: Cardiovascular Issues, Hemorrhagic Stroke and Ischemic Stroke.
+The CYP2C19 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs4244285_FS1 is associated with an increased risk of: Thrombosis and Cardiovascular Issues.
+The CYP2C19 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs4244285_FS2 is associated with an increased risk of: Thrombosis and Cardiovascular Issues.
+The DAB2IP gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs7025486_FS1 is associated with an increased risk of: Aortic Aneurysm, Aneurysm, Pulmonary Hypertension and Ischemic Stroke.
+The DAB2IP gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs7025486_FS2 is associated with an increased risk of: Aortic Aneurysm, Aneurysm, Pulmonary Hypertension and Ischemic Stroke.
+The F12, SLC34A1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs383830_FS1 is associated with an increased risk of: Cardiovascular Issues, Heart Disease and Thrombosis.
+The F12, SLC34A1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs383830_FS2 is associated with an increased risk of: Cardiovascular Issues, Heart Disease and Thrombosis.
+The F2 gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs1799963_FS1 is associated with an increased risk of: Pulmonary Hypertension, Cardiovascular Issues, Ischemic Stroke, Thrombosis and Arterial Occlusive Disease.
+The F2 gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs1799963_FS2 is associated with an increased risk of: Pulmonary Hypertension, Cardiovascular Issues, Ischemic Stroke, Thrombosis and Arterial Occlusive Disease.
+The F5 gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs6025_FS1 is associated with an increased risk of: Cardiovascular Issues, Arterial Occlusive Disease, Thrombosis, Pulmonary Hypertension, Ischemic Stroke and Stroke.
+The F5 gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs6025_FS2 is associated with an increased risk of: Cardiovascular Issues, Arterial Occlusive Disease, Thrombosis, Pulmonary Hypertension, Ischemic Stroke and Stroke.
+The FBN1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2118181_FS1 is associated with an increased risk of: Aortic Aneurysm.
+The FBN1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2118181_FS2 is associated with an increased risk of: Aortic Aneurysm.
+The FTO gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs1421085_FS1 is associated with an increased risk of: Aortic Aneurysm and Insulin Resistance.
+The FTO gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs1421085_FS2 is associated with an increased risk of: Aortic Aneurysm and Insulin Resistance.
+The GCH1 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs841_FS1 is associated with an increased risk of: Ischemic Stroke.
+The GCH1 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs841_FS2 is associated with an increased risk of: Ischemic Stroke.
+The HABP2 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs7080536_FS1 is associated with an increased risk of: Thrombosis.
+The HABP2 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs7080536_FS2 is associated with an increased risk of: Thrombosis.
+The HFE gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs1799945_FS1 is associated with an increased risk of: Cardiovascular Issues, Thrombosis, Insulin Resistance, Ischemic Stroke, Pulmonary Hypertension and Hemorrhagic Stroke.
+The HFE gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs1799945_FS2 is associated with an increased risk of: Cardiovascular Issues, Thrombosis, Insulin Resistance, Ischemic Stroke, Pulmonary Hypertension and Hemorrhagic Stroke.
+The IL18 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs187238_FS1 is associated with an increased risk of: Ischemic Stroke.
+The IL18 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs187238_FS2 is associated with an increased risk of: Ischemic Stroke.
+The IL6 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1800796_FS1 is associated with an increased risk of: Cardiovascular Issues, Aortic Aneurysm, Thrombosis and Ischemic Stroke.
+The IL6 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1800796_FS2 is associated with an increased risk of: Cardiovascular Issues, Aortic Aneurysm, Thrombosis and Ischemic Stroke.
+The ITGB3 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs5918_FS1 is associated with an increased risk of: Ischemic Stroke, Arterial Occlusive Disease and Thrombosis.
+The ITGB3 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs5918_FS2 is associated with an increased risk of: Ischemic Stroke, Arterial Occlusive Disease and Thrombosis.
+The LOC100287329, LTA gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs1041981_FS1 is associated with an increased risk of: Ischemic Stroke.
+The LOC100287329, LTA gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs1041981_FS2 is associated with an increased risk of: Ischemic Stroke.
+The LOC729065 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2200733_FS1 is associated with an increased risk of: Ischemic Stroke and Stroke.
+The LOC729065 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2200733_FS2 is associated with an increased risk of: Ischemic Stroke and Stroke.
+The LPA gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs10455872_FS1 is associated with an increased risk of: Ischemic Stroke, Cardiovascular Issues, Heart Valve Disease, Mitral valve issues and High LDL.
+The LPA gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs10455872_FS2 is associated with an increased risk of: Ischemic Stroke, Cardiovascular Issues, Heart Valve Disease, Mitral valve issues and High LDL.
+The LPA gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10033464_FS1 is associated with an increased risk of: Ischemic Stroke.
+The LPA gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10033464_FS2 is associated with an increased risk of: Ischemic Stroke.
+The LPL gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs268_FS1 is associated with an increased risk of: Ischemic Stroke and Low HDL.
+The LPL gene exhibits a variation of 'Pathogenic' clinical significance. The variation at index rs268_FS2 is associated with an increased risk of: Ischemic Stroke and Low HDL.
+The MYH15 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3900940_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The MYH15 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3900940_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The PALLD gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs7439293_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The PALLD gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs7439293_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The PDE4D gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs966221_FS1 is associated with an increased risk of: Ischemic Stroke.
+The PDE4D gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs966221_FS2 is associated with an increased risk of: Ischemic Stroke.
+The PON1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs662_FS1 is associated with an increased risk of: Cardiovascular Issues, Mitral valve issues, Dsyslipidemia, Insulin Resistance, Low HDL and Ischemic Stroke.
+The PON1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs662_FS2 is associated with an increased risk of: Cardiovascular Issues, Mitral valve issues, Dsyslipidemia, Insulin Resistance, Low HDL and Ischemic Stroke.
+The PON1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs854560_FS1 is associated with an increased risk of: Cardiovascular Issues, Insulin Resistance, Low HDL, Ischemic Stroke and Hypercholesterolemia.
+The PON1 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs854560_FS2 is associated with an increased risk of: Cardiovascular Issues, Insulin Resistance, Low HDL, Ischemic Stroke and Hypercholesterolemia.
+The PRKCH gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3783799_FS1 is associated with an increased risk of: Stroke.
+The PRKCH gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3783799_FS2 is associated with an increased risk of: Stroke.
+The PSMA6 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs1048990_FS1 is associated with an increased risk of: Ischemic Stroke.
+The PSMA6 gene exhibits a variation of 'Risk Factor' clinical significance. The variation at index rs1048990_FS2 is associated with an increased risk of: Ischemic Stroke.
+The PSRC1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs599839_FS1 is associated with an increased risk of: Cardiovascular Issues, Dsyslipidemia, Heart Disease, High LDL and Aortic Aneurysm.
+The PSRC1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs599839_FS2 is associated with an increased risk of: Cardiovascular Issues, Dsyslipidemia, Heart Disease, High LDL and Aortic Aneurysm.
+The PTGS1 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs10306114_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The PTGS1 gene exhibits a variation of 'Drug Response' clinical significance. The variation at index rs10306114_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The PTGS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3842787_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The PTGS1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs3842787_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The RP1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs9298506_FS1 is associated with an increased risk of: Aneurysm.
+The RP1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs9298506_FS2 is associated with an increased risk of: Aneurysm.
+The SELE gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs5361_FS1 is associated with an increased risk of: Ischemic Stroke, Arterial Occlusive Disease and Thrombosis.
+The SELE gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs5361_FS2 is associated with an increased risk of: Ischemic Stroke, Arterial Occlusive Disease and Thrombosis.
+The SERPINI1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs6797312_FS1 is associated with an increased risk of: Ischemic Stroke, Stroke and Low HDL.
+The SERPINI1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs6797312_FS2 is associated with an increased risk of: Ischemic Stroke, Stroke and Low HDL.
+The STARD13 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs9315204_FS1 is associated with an increased risk of: Aneurysm.
+The STARD13 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs9315204_FS2 is associated with an increased risk of: Aneurysm.
+The TLR4 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs4986790_FS1 is associated with an increased risk of: Cardiovascular Issues, Insulin Resistance, Low HDL, Ischemic Stroke, Dilated Cardiomyopathy, Pulmonary Hypertension and Ischemic Stroke.
+The TLR4 gene exhibits a variation of 'Benign' clinical significance. The variation at index rs4986790_FS2 is associated with an increased risk of: Cardiovascular Issues, Insulin Resistance, Low HDL, Ischemic Stroke, Dilated Cardiomyopathy, Pulmonary Hypertension and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10757278_FS1 is associated with an increased risk of: Cardiovascular Issues, Heart Disease, Aortic Aneurysm and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10757278_FS2 is associated with an increased risk of: Cardiovascular Issues, Heart Disease, Aortic Aneurysm and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10958409_FS1 is associated with an increased risk of: Aneurysm.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs10958409_FS2 is associated with an increased risk of: Aneurysm.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1333048_FS1 is associated with an increased risk of: Cardiovascular Issues, Aortic Aneurysm, Ischemic Stroke and Heart Disease.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1333048_FS2 is associated with an increased risk of: Cardiovascular Issues, Aortic Aneurysm, Ischemic Stroke and Heart Disease.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1746048_FS1 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs1746048_FS2 is associated with an increased risk of: Cardiovascular Issues and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2943634_FS1 is associated with an increased risk of: Cardiovascular Issues, Heart Disease, Low HDL, Insulin Resistance and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs2943634_FS2 is associated with an increased risk of: Cardiovascular Issues, Heart Disease, Low HDL, Insulin Resistance and Ischemic Stroke.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs501120_FS1 is associated with an increased risk of: Cardiovascular Issues, Ischemic Stroke and Heart Disease.
+The Unlisted gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs501120_FS2 is associated with an increased risk of: Cardiovascular Issues, Ischemic Stroke and Heart Disease.
+The ZPR1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs964184_FS1 is associated with an increased risk of: Ischemic Stroke, Hemorrhagic Stroke, Dsyslipidemia and Low HDL.
+The ZPR1 gene exhibits a variation of 'Uncertain' clinical significance. The variation at index rs964184_FS2 is associated with an increased risk of: Ischemic Stroke, Hemorrhagic Stroke, Dsyslipidemia and Low HDL.
+Thyrotropin [Units/volume] in Serum or Plasma
+Thyroxine (T4) free [Mass/volume] in Serum or Plasma
+Tobacco smoking status NHIS
+Total Bilirubin (Elevated)
+Total Cholesterol
+Total score [MMSE]
+Treatment status Cancer
+Triglycerides
+Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method
+Tumor marker Cancer
+US Guidance for biopsy of Prostate
+Urea Nitrogen
+Urea nitrogen [Mass/volume] in Serum or Plasma
+WBC Auto (Bld) [#/Vol]
+Walnut IgE Ab in Serum
+Weight difference [Mass difference] --pre dialysis - post dialysis
+Weight-for-length Per age and sex
+Wheat IgE Ab in Serum
+White Blood Cell (Elevated)
+White oak IgE Ab in Serum
+pH of Urine by Test strip

@@ -1,0 +1,16 @@
+Report generated for: ImagingStudy
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 12
+==================================================
+Computed Radiography: Title of this image - Thoracic structure (body structure)
+Computed Tomography: CT Image Storage - Thoracic structure (body structure)
+Digital Radiography: Image of ankle - Ankle
+Digital Radiography: Image of arm - Arm
+Digital Radiography: Image of chest - Chest
+Digital Radiography: Image of clavicle - Clavicle
+Digital Radiography: Image of knee - Knee
+Digital Radiography: Image of pelvis - Pelvis
+Digital Radiography: Image of wrist - Wrist
+Magnetic Resonance: MRI Image of Brain - Head structure (body structure)
+Ultrasound: Title of this image - Structure of right upper quadrant of abdomen
+Ultrasound: Ultrasound Multiframe Image Storage - Heart structure (body structure)

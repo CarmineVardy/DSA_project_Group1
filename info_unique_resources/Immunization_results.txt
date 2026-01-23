@@ -1,0 +1,12 @@
+Report generated for: Immunization
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 8
+==================================================
+Hep A, adult
+Hep B, adult
+Influenza, seasonal, injectable, preservative free
+Pneumococcal conjugate PCV 13
+Td (adult) preservative free
+meningococcal MCV4P
+pneumococcal polysaccharide vaccine, 23 valent
+zoster

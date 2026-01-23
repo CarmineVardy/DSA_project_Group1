@@ -1,0 +1,20 @@
+Report generated for: DiagnosticReport
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 16
+==================================================
+Basic Metabolic 2000 Panel
+Basic Metabolic Panel
+CBC W Differential panel, method unspecified - Blood
+Complete blood count (hemogram) panel - Blood by Automated count
+Comprehensive metabolic 2000 panel - Serum or Plasma
+Genetic analysis summary panel
+Heartfailure Tracking Panel
+Hemoglobin and Hematocrit panel - Blood
+History and physical note
+Iron and Iron binding capacity panel - Serum or Plasma
+Iron panel - Serum or Plasma
+Lipid Panel
+New York Heart Association Functional Classification panel
+Troponin I.cardiac panel - Serum or Plasma by High sensitivity method
+U.S. standard certificate of death - 2003 revision
+Urinalysis macro (dipstick) panel - Urine

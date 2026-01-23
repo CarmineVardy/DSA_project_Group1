@@ -1,0 +1,8 @@
+Report generated for: Device
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 4
+==================================================
+Coronary artery stent (physical object)
+Implantable cardiac pacemaker (physical object)
+Implantable defibrillator, device (physical object)
+Left ventricular assist device (physical object)

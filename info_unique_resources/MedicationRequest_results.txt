@@ -1,0 +1,129 @@
+Report generated for: MedicationRequest
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 125
+==================================================
+0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe
+1 ML DOCEtaxel 20 MG/ML Injection
+1 ML Epinephrine 1 MG/ML Injection
+1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]
+1 ML Morphine Sulfate 5 MG/ML Injection
+1 ML heparin sodium, porcine 5000 UNT/ML Injection
+1 ML medroxyprogesterone acetate 150 MG/ML Injection
+10 ML Doxorubicin Hydrochloride 2 MG/ML Injection
+10 ML oxaliplatin 5 MG/ML Injection
+100 ML Epirubicin Hydrochloride 2 MG/ML Injection
+100 ML zoledronic acid 0.04 MG/ML Injection
+12 HR Cefaclor 500 MG Extended Release Oral Tablet
+120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler
+168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System
+2 ML Ondansetron 2 MG/ML Injection
+24 HR Donepezil hydrochloride 10 MG / Memantine hydrochloride 28 MG Extended Release Oral Capsule
+24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet
+24hr nicotine transdermal patch
+3 ML Amiodarone hydrocholoride 50 MG/ML Prefilled Syringe
+5 ML fulvestrant 50 MG/ML Prefilled Syringe
+60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler
+Abuse-Deterrent 12 HR Oxycodone Hydrochloride 15 MG Extended Release Oral Tablet
+Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution
+Acetaminophen 300 MG / HYDROcodone Bitartrate 5 MG Oral Tablet
+Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet
+Acetaminophen 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet
+Acetaminophen 325 MG / oxyCODONE Hydrochloride 2.5 MG Oral Tablet
+Acetaminophen 325 MG / oxyCODONE Hydrochloride 5 MG Oral Tablet
+Acetaminophen 325 MG Oral Tablet
+Acetaminophen/Hydrocodone
+Alendronic acid 10 MG Oral Tablet
+Allopurinol 100 MG Oral Tablet
+Alteplase 100 MG Injection
+Amlodipine 5 MG Oral Tablet
+Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet
+Amoxicillin 500 MG Oral Tablet
+Ampicillin 100 MG/ML Injectable Solution
+Aspirin 81 MG Oral Tablet
+Astemizole 10 MG Oral Tablet
+Atorvastatin 80 MG Oral Tablet
+Atropine Sulfate 1 MG/ML Injectable Solution
+Camila 28 Day Pack
+Captopril 25 MG Oral Tablet
+Carbamazepine[Tegretol]
+Cefuroxime 250 MG Oral Tablet
+Chlorpheniramine Maleate 2 MG/ML Oral Solution
+Chlorpheniramine Maleate 4 MG Oral Tablet
+Cisplatin 50 MG Injection
+Clopidogrel 75 MG Oral Tablet
+Colchicine 0.6 MG Oral Tablet
+Diazepam 5 MG Oral Tablet
+Digoxin 0.125 MG Oral Tablet
+Donepezil hydrochloride 10 MG Oral Tablet
+Donepezil hydrochloride 23 MG Oral Tablet
+Doxycycline Monohydrate 100 MG Oral Tablet
+Errin 28 Day Pack
+Etonogestrel 68 MG Drug Implant
+Etoposide 100 MG Injection
+FLUoxetine 20 MG Oral Capsule
+Furosemide 40 MG Oral Tablet
+Galantamine 4 MG Oral Tablet
+Hydrochlorothiazide 25 MG Oral Tablet
+Hydrocortisone 10 MG/ML Topical Cream
+Ibuprofen 200 MG Oral Tablet
+Jolivette 28 Day Pack
+Kyleena 19.5 MG Intrauterine System
+Leucovorin 100 MG Injection
+Levonorgestrel 0.00354 MG/HR Drug Implant
+Levora 0.15/30 28 Day Pack
+Levothyroxine Sodium 0.075 MG Oral Tablet
+Liletta 52 MG Intrauterine System
+Loratadine 10 MG Oral Tablet
+Memantine hydrochloride 2 MG/ML Oral Solution
+Meperidine Hydrochloride 50 MG Oral Tablet
+Mestranol / Norethynodrel [Enovid]
+Methotrexate 2.5 MG Oral Tablet
+Milnacipran hydrochloride 100 MG Oral Tablet
+Mirena 52 MG Intrauterine System
+NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler
+NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector
+NITROFURANTOIN, MACROCRYSTALS 50 MG Oral Capsule
+Naproxen 500 MG Oral Tablet
+Naproxen sodium 220 MG Oral Tablet
+Natazia 28 Day Pack
+Nitrofurantoin 5 MG/ML Oral Suspension
+Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray
+Norinyl 1+50 28 Day Pack
+NuvaRing 0.12/0.015 MG per 24HR 21 Day Vaginal Ring
+Ortho Tri-Cyclen 28 Day Pack
+PACLitaxel 100 MG Injection
+Paclitaxel 100 MG Injection
+Penicillin G 375 MG/ML Injectable Solution
+Penicillin V Potassium 250 MG Oral Tablet
+Penicillin V Potassium 500 MG Oral Tablet
+Phenazopyridine hydrochloride 100 MG Oral Tablet
+Piperacillin 4000 MG / tazobactam 500 MG Injection
+Seasonique 91 Day Pack
+Sertraline 100 MG Oral Tablet
+Simvastatin 10 MG Oral Tablet
+Simvastatin 20 MG Oral Tablet
+Sodium Chloride 9 MG/ML Injectable Solution
+Tacrine 10 MG Oral Capsule
+Tamoxifen 10 MG Oral Tablet
+Trinessa 28 Day Pack
+Verapamil Hydrochloride 40 MG
+Verzenio 100 MG Oral Tablet
+Vitamin B 12 5 MG/ML Injectable Solution
+Warfarin Sodium 5 MG Oral Tablet
+Yaz 28 Day Pack
+amLODIPine 2.5 MG Oral Tablet
+carvedilol 25 MG Oral Tablet
+clonazePAM 0.25 MG Oral Tablet
+cycloSPORINE, modified 100 MG Oral Capsule
+diphenhydrAMINE Hydrochloride 25 MG Oral Tablet
+duloxetine 20 MG Delayed Release Oral Capsule
+exemestane 25 MG Oral Tablet
+ferrous sulfate 325 MG Oral Tablet
+insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]
+lisinopril 10 MG Oral Tablet
+lisinopril 20 MG Oral Tablet
+losartan potassium 50 MG Oral Tablet
+predniSONE 20 MG Oral Tablet
+predniSONE 5 MG Oral Tablet
+pregabalin 100 MG Oral Capsule
+sacubitril 97 MG / valsartan 103 MG Oral Tablet

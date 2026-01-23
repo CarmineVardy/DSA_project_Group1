@@ -1,0 +1,5 @@
+Report generated for: DocumentReference
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 1
+==================================================
+History and physical note

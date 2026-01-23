@@ -1,0 +1,6 @@
+Report generated for: Patient
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 2
+==================================================
+female
+male

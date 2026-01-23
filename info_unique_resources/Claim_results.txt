@@ -1,0 +1,56 @@
+Report generated for: Claim
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 52
+==================================================
+Admission to hospice (procedure)
+Admission to intensive care unit (procedure)
+Admission to surgical department
+Admission to thoracic surgery department
+Allergic disorder follow-up assessment
+Allergic disorder initial assessment
+Asthma follow-up
+Cardiac Arrest
+Consultation for treatment
+Death Certification
+Discussion about treatment (procedure)
+Domiciliary or rest home patient evaluation and management
+Drug rehabilitation and detoxification
+Emergency Encounter
+Emergency Room Admission
+Emergency hospital admission for asthma
+Emergency room admission (procedure)
+Encounter Inpatient
+Encounter for 'check-up'
+Encounter for Problem
+Encounter for check up (procedure)
+Encounter for problem
+Encounter for problem (procedure)
+Encounter for symptom
+Encounter for symptom (procedure)
+Follow-up encounter
+Follow-up visit (procedure)
+General examination of patient (procedure)
+Gynecology service (qualifier value)
+Hospital admission
+Hypertension follow-up encounter
+Initial Psychiatric Interview with mental status evaluation
+Myocardial Infarction
+Non-urgent orthopedic admission
+Obstetric emergency hospital admission
+Office Visit
+Outpatient procedure
+Patient encounter procedure
+Patient-initiated encounter
+Periodic reevaluation and management of healthy individual (procedure)
+Postnatal visit
+Postoperative follow-up visit (procedure)
+Prenatal initial visit
+Prenatal visit
+Screening surveillance (regime/therapy)
+Stroke
+Surgical procedure (procedure)
+Telemedicine consultation with patient
+Telephone encounter (procedure)
+Urgent care clinic (procedure)
+Well child visit (procedure)
+posttraumatic stress disorder

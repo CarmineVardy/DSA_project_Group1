@@ -1,0 +1,157 @@
+Report generated for: Procedure
+Server: http://localhost:8085/fhir
+Total Unique Values Found: 153
+==================================================
+Admission to burn unit
+Admission to long stay hospital
+Admission to neurosurgical department
+Admission to orthopedic department
+Admission to trauma surgery department
+Allergy screening test
+Alpha-fetoprotein test
+Amputation of right foot
+Ankle X-ray
+Antenatal RhD antibody screening
+Appendectomy
+Assessment using New York Heart Association Classification (procedure)
+Asthma screening
+Augmentation of labor
+Auscultation of the fetal heart
+Bilateral tubal ligation
+Biopsy of breast (procedure)
+Biopsy of colon
+Biopsy of prostate
+Blood typing, RH typing
+Bone density scan (procedure)
+Bone immobilization
+Brief general examination (procedure)
+CT of head (procedure)
+Cardiovascular stress testing (procedure)
+Catheter ablation of tissue of heart
+Cesarean section
+Chemotherapy (procedure)
+Chest X-ray
+Childbirth
+Chlamydia antigen test
+Clavicle X-ray
+Cognitive and behavioral therapy
+Colonoscopy
+Combined chemotherapy and radiation therapy (procedure)
+Computed tomography of chest and abdomen
+Coronary artery bypass grafting
+Counseling for termination of pregnancy
+Cytopathology procedure, preparation of smear, genital source
+Cytopathology procedure, preparation of smear, genital source (procedure)
+Depression screening
+Diagnostic fiberoptic bronchoscopy (procedure)
+Digital examination of rectum
+Echocardiography (procedure)
+Electrical cardioversion
+Electrocardiographic procedure
+Epidural anesthesia
+Episiotomy
+Evaluation of uterine fundal height
+Excision of axillary lymph node (procedure)
+Excision of breast tissue (procedure)
+Excision of fallopian tube and surgical removal of ectopic pregnancy
+Excision of sentinel lymph node (procedure)
+Extraction of wisdom tooth
+Fetal anatomy study
+Fine needle aspiration biopsy of lung (procedure)
+Gonorrhea infection test
+Hearing examination (procedure)
+Heart failure education (procedure)
+Hemoglobin / Hematocrit / Platelet count
+Hepatitis B Surface Antigen Measurement
+Hepatitis C antibody test
+High resolution computed tomography of chest without contrast (procedure)
+Human epidermal growth factor receptor 2 gene detection by fluorescence in situ hybridization (procedure)
+Human epidermal growth factor receptor 2 gene detection by immunohistochemistry (procedure)
+Human immunodeficiency virus antigen test
+Implantation of left ventricular assist device (procedure)
+Induced termination of pregnancy
+Information gathering (procedure)
+Injection of adrenaline
+Injection of tetanus antitoxin
+Insertion of biventricular implantable cardioverter defibrillator
+Insertion of intrauterine contraceptive device
+Insertion of subcutaneous contraceptive
+Instrumental delivery
+Intramuscular injection
+Intravenous blood transfusion of packed cells (procedure)
+Intravenous injection (procedure)
+Intubation
+Knee X-ray
+Laparoscopic Removal of Gall Bladder
+Lumpectomy of breast (procedure)
+Lung volume reduction surgery (procedure)
+Magnetic resonance imaging for measurement of brain volume (procedure)
+Magnetic resonance imaging of breast (procedure)
+Magnetic resonance imaging of head (procedure)
+Mammogram - symptomatic (procedure)
+Mammography (procedure)
+Manual pelvic examination (procedure)
+Measurement of Varicella-zoster virus antibody
+Measurement of respiratory function (procedure)
+Medical induction of labor
+Medication Reconciliation (procedure)
+Methotrexate injection into tubal pregnancy
+Nasal sinus endoscopy (procedure)
+Open Removal of Gall Bladder
+Oxygen administration by mask (procedure)
+Partial resection of colon
+Pelvis X-ray
+Percutaneous coronary intervention
+Percutaneous mechanical thrombectomy of portal vein using fluoroscopic guidance
+Peripheral blood smear interpretation
+Physical exam following abortion
+Physical examination
+Physical examination following birth
+Physical examination of mother
+Placing subject in prone position (procedure)
+Plain chest X-ray (procedure)
+Postoperative procedure education (procedure)
+Pregnancy termination care
+Premature birth of newborn
+Prostatectomy
+Pulmonary rehabilitation (regime/therapy)
+Radiation therapy care (regime/therapy)
+Rectal polypectomy
+Removal of intrauterine device
+Removal of subcutaneous contraceptive
+Renal dialysis (procedure)
+Replacement of contraceptive intrauterine device
+Review of systems (procedure)
+RhD passive immunization
+Rubella screening
+Screening for chromosomal aneuploidy in prenatal amniotic fluid
+Screening for occult blood in feces (procedure)
+Screening mammography (procedure)
+Seizure Count Cerebral Cortex Electroencephalogram (EEG)
+Sentinel lymph node biopsy (procedure)
+Skin test for tuberculosis
+Spirometry (procedure)
+Sputum examination (procedure)
+Sputum microscopy (procedure)
+Standard pregnancy test
+Streptococcus pneumoniae group B antigen test
+Subcutaneous immunotherapy
+Surgical manipulation of joint of knee
+Surgical manipulation of shoulder joint
+Suture open wound
+Syphilis infection test
+Teleradiotherapy procedure (procedure)
+Thoracentesis (procedure)
+Throat culture (procedure)
+Transplantation of heart (procedure)
+Ultrasonography of abdomen, right upper quadrant and epigastrium
+Ultrasonography of bilateral breasts (procedure)
+Ultrasound scan for fetal viability
+Upper arm X-ray
+Urine culture
+Urine protein test
+Urine screening for glucose
+Urine screening test for diabetes
+Vaccination for diphtheria, pertussis, and tetanus
+Vasectomy
+X-ray or wrist
