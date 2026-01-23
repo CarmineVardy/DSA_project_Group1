@@ -4,6 +4,8 @@ import sys
 from dotenv import load_dotenv
 from fhirpy import SyncFHIRClient
 
+from patient import AppPatient
+
 load_dotenv()
 SERVER_URL = os.getenv("SERVER_URL")
 
@@ -20,51 +22,35 @@ def main():
     try:
         patients = client.resources('Patient') \
             .sort('_lastUpdated') \
-            .elements('id', 'name') \
-            .fetch_all()        
+            .limit(1) \
+            .fetch()
+            #.fetch_all()                
     except Exception as e:
         print(f"Connection Error: {e}")
         sys.exit(1)
 
+    # CHECK IF THERE ARE NO PATIENTS IN SERVER
     if not patients:
         print("No patients found on the server.")
         sys.exit(1)
 
-    print(f"{len(patients)} patients.")
-
-    # BUILD MAP (ID -> Name) 
-    patients_map = {}
-    
+    app_patients = []
     for patient in patients:
-        # --- Parsing Logic (Inline) ---
-        p_id = patient.id
-        full_name = "Unknown"
-        # Check if 'name' attribute exists (fhirpy objects allow dot notation)
-        if patient.get('name'):
-            # Name is a list, take the first one
-            name_entry = patient.name[0]
-            # Extract Family (String)
-            family = name_entry.get('family', '')
-            # Extract Given (List of Strings) -> Join them
-            given_list = name_entry.get('given', [])
-            given = " ".join(given_list)
-            full_name = f"{given} {family}".strip()
-        # Add to map
-        patients_map[p_id] = full_name
+        try:
+            patient_obj = AppPatient(patient.serialize())
+            app_patients.append(patient_obj)
+        except Exception as e:
+            p_id = patient.id if hasattr(patient, 'id') else "Unknown"
+            print(f"[WARNING] Could not parse patient {p_id}: {e}")
 
-    # PRINT THE MAP 
-    print("\n--- PATIENT LIST ---")
-    print(f"{'INDEX':<5} | {'ID':<40} | {'NAME'}")
-    print("-" * 70)
+    for app_patient in app_patients:
+        print(app_patient.get_full_name())
+        print(app_patient.gender)
+        print(app_patient.birthDate)
+        print(app_patient.age)
+        print(app_patient.isDeceased)
+        print(app_patient.deceasedDate)
 
-    # Convert map to list to allow indexing (0, 1, 2...)
-    # patient_list becomes: [ (id1, name1), (id2, name2), ... ]
-    patient_list = list(patients_map.items())
-
-    for i, (pid, pname) in enumerate(patient_list):
-        print(f"[{i}]   | {pid:<40} | {pname}")
-
-    print("-" * 70)
 
 if __name__ == "__main__":
     main()
