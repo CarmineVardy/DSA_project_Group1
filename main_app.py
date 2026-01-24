@@ -4,8 +4,8 @@ import sys
 from dotenv import load_dotenv
 from fhirpy import SyncFHIRClient
 
-from patient import AppPatient
-from clinical_resources import AppCondition
+from resources.administration.patient import AppPatient
+from resources.clinical.condition import AppCondition
 
 
 load_dotenv()
@@ -61,7 +61,8 @@ def main():
         print(f"Error: Patient {target_id} not found in local objects.")
         sys.exit(1)
 
-
+    #START FROM SELECTED_PATIENT
+    
     #START FROM CLINICAL RESOURCES
     ''' 
     AllergyIntolerance
@@ -80,9 +81,6 @@ def main():
     NutritionIntake
     NutritionOrder
     '''
-
-
-    # we start from selected_patient
 
     # CONDITION
     conditions = []
