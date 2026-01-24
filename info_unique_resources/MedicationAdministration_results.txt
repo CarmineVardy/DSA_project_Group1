@@ -1,5 +1,20 @@
 Report generated for: MedicationAdministration
 Server: http://localhost:8085/fhir
-Total Unique Values Found: 0
+Total Unique Values Found: 16
 ==================================================
-No unique values found or extraction failed.
+10 ML Alfentanil 0.5 MG/ML Injection - completed
+10 ML Fentanyl 0.05 MG/ML Injection - completed
+10 ML Furosemide 10 MG/ML Injection - completed
+100 ML Propofol 10 MG/ML Injection - completed
+2 ML Ondansetron 2 MG/ML Injection - completed
+5 ML SUFentanil 0.05 MG/ML Injection - completed
+Calcium Carbonate 1250 MG / Cholecalciferol 1000 UNT / Vitamin K 0.4 MG Chewable Tablet - completed
+Cisplatin 50 MG Injection - completed
+Diazepam 5 MG/ML Injectable Solution - completed
+Etoposide 100 MG Injection - completed
+Isoflurane 999 MG/ML Inhalant Solution - completed
+Midazolam 1 MG/ML Injectable Solution - completed
+PACLitaxel 100 MG Injection - completed
+Rocuronium bromide 10 MG/ML Injectable Solution - completed
+desflurane 1000 MG/ML Inhalation Solution - completed
+remifentanil 2 MG Injection - completed

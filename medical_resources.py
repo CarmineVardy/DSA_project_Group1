@@ -114,6 +114,14 @@ def extract_resource_info(entry):
             org_name = resource.get('organization', {}).get('display')
             return f"{prac_name} - {specialty} - {org_name}"
 
+        elif resource_type == 'MedicationAdministration':
+            # Extract Medication Display - Status
+            med_display = resource.get('medicationCodeableConcept', {}).get('coding', [{}])[0].get('display')
+            status = resource.get('status')
+            return f"{med_display} - {status}"
+            # Retrieving only the specimen
+            # return resource.get('medicationCodeableConcept', {}).get('coding', [{}])[0].get('display')
+
         elif resource_type == 'MedicationRequest':
             # Extract Medication Display
             return resource.get('medicationCodeableConcept', {}).get('coding', [{}])[0].get('display')
