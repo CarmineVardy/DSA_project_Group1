@@ -103,6 +103,25 @@ def main():
     selected_patient.add_conditions(app_conditions)
     print(f"Update: Added {len(app_conditions)} conditions to Patient {selected_patient.id}.")
 
+    # Allergy intollerance test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # --------------------------
 
 
 
