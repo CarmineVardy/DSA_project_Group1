@@ -2,7 +2,9 @@ from fhir.resources.patient import Patient as FhirPatient
 
 from datetime import date, datetime
 from enum import Enum
-from typing import Optional
+from typing import Optional, List
+
+from clinical_resources import AppCondition
 
 class Gender(str, Enum):
     MALE = "male"
@@ -16,6 +18,7 @@ class Gender(str, Enum):
 class AppPatient:
     def __init__(self, raw_json_data: dict):
         self.resource = FhirPatient(**raw_json_data)
+        self._conditions: List[AppCondition] = []
 
     @property
     def id(self):
@@ -72,6 +75,12 @@ class AppPatient:
         suffixes = {1: 'st', 2: 'nd', 3: 'rd'}
         return "; ".join(f"{i}{sfx.get(i, 'th')}: {name}" for i, name in enumerate(formatted_names, 1))
 
+    @property
+    def conditions(self) -> List[AppCondition]:
+        return self._conditions
+
+    def add_conditions(self, conditions: List[AppCondition]):
+        self._conditions.extend(conditions)
 
 
 
