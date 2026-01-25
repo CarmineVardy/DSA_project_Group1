@@ -18,6 +18,7 @@ class AppAllergyIntolerance:
     def __init__(self, raw_json_data: dict):
         self.resource = FhirAllergyIntolerance(**raw_json_data)
 
+
     @property
     def id(self) -> str:
         return self.resource.id
@@ -93,8 +94,6 @@ class AppAllergyIntolerance:
     @property
     def recordedDate(self) -> Optional[datetime]:
         return self.resource.recordedDate
-
-
     """
         Returns a list of reactions associated with this allergy.
         Structure:
@@ -160,7 +159,6 @@ class AppAllergyIntolerance:
             for coding in codeable_concept.coding:
                 if coding.display:
                     return coding.display
-        
         return None
 
     # UTIL METHODS
