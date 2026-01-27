@@ -75,7 +75,7 @@ class AppPatient:
             return formatted_names[0]
 
         #If more than one name build the string with all
-        suffixes = {1: 'st', 2: 'nd', 3: 'rd'}
+        sfx = {1: 'st', 2: 'nd', 3: 'rd'}
         return "; ".join(f"{i}{sfx.get(i, 'th')}: {name}" for i, name in enumerate(formatted_names, 1))
 
     @property

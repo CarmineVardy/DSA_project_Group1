@@ -4,6 +4,8 @@ fhir_server/
 server_storage/
 server_storage_Carmine/
 
+ui.py
+
 # Ignore these files (for surely)
 *.zip
 *.sif
