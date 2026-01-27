@@ -27,8 +27,11 @@ class AppPatient:
     @property
     def gender(self) -> Gender:
         if not self.resource.gender:
-            return Gender.UNKNOWN
-        return Gender(self.resource.gender)
+            return None
+        try:
+            return Gender(self.resource.gender)
+        except ValueError:
+            return None
 
     @property
     def birthDate(self) -> Optional[date]:
