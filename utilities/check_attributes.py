@@ -1,6 +1,5 @@
 import os
 import sys
-
 from tqdm import tqdm
 from dotenv import load_dotenv
 from fhirpy import SyncFHIRClient
@@ -8,80 +7,84 @@ from fhirpy import SyncFHIRClient
 load_dotenv()
 SERVER_URL = os.getenv("SERVER_URL")
 
+# List of standard Procedure fields to check for
+# Based on FHIR R4 Specification
+EXPECTED_FIELDS = [
+    'resourceType', 'id', 'identifier', 'instantiatesCanonical', 
+    'instantiatesUri', 'basedOn', 'partOf', 'status', 'statusReason', 
+    'category', 'code', 'subject', 'encounter', 
+    # performed[x] polymorphic fields:
+    'performedDateTime', 'performedPeriod', 'performedString', 
+    'performedAge', 'performedRange', 
+    'recorder', 'asserter', 'performer', 'location', 'reasonCode', 
+    'reasonReference', 'bodySite', 'outcome', 'report', 'complication', 
+    'complicationDetail', 'followUp', 'note', 'focalDevice', 
+    'usedReference', 'usedCode'
+]
+
 def main():
-   
-    # CLIENT INITIALIZATION
+    
+    # 1. CLIENT INITIALIZATION
     try:
         client = SyncFHIRClient(SERVER_URL)
     except Exception as e:
         print(f"Error: Could not create client. {e}")
         sys.exit(1)
 
-    # FETCH DATA (all patients)
+    # 2. FETCH DATA (Procedure)
+    print("Fetching Procedures from server...")
     try:
-        patients = client.resources('Patient') \
-            .sort('_lastUpdated') \
-            .elements('id', 'name', 'active') \
-            .fetch_all()        
+        # Fetch all records
+        # Note: We query 'Procedure' 
+        procedures = client.resources('Procedure').sort('_lastUpdated').fetch_all()
     except Exception as e:
         print(f"Connection Error: {e}")
         sys.exit(1)
 
-    if not patients:
-        print("No patients found on the server.")
+    if not procedures:
+        print("No Procedure records found on the server.")
         sys.exit(1)
 
-    print(f"{len(patients)} patients found. Processing...")
+    total_records = len(procedures)
+    print(f"{total_records} Procedures found. Analyzing field coverage...")
 
-    # BUILD MAP (ID -> Name) 
-    patients_map = {}
-    
-    # Counters for active field statistics
-    has_active_field = 0
-    missing_active_field = 0
+    # 3. ANALYZE FIELDS
+    # Initialize set with expected fields so they always appear in report
+    all_fields_found = set(EXPECTED_FIELDS)
+    field_counts = {field: 0 for field in EXPECTED_FIELDS}
 
-    # Using tqdm for progress bar
-    for patient in tqdm(patients, desc="Processing Patients"):
+    # Iterate with loading bar
+    for proc in tqdm(procedures, desc="Scanning Attributes"):
         
-        # --- Check Active Field ---
-        if patient.get('active') is not None:
-            has_active_field += 1
-        else:
-            missing_active_field += 1
+        # Serialize to dictionary to inspect actual JSON keys
+        data = proc.serialize() 
+        
+        for key, value in data.items():
+            # Check if value exists (not None)
+            if value is not None:
+                # Add to set (catches any custom/unexpected fields)
+                all_fields_found.add(key)
+                
+                # Increment counter
+                if key in field_counts:
+                    field_counts[key] += 1
+                else:
+                    field_counts[key] = 1
 
-        # --- Parsing Logic (Inline) ---
-        p_id = patient.id
-        full_name = "Unknown"
-        # Check if 'name' attribute exists (fhirpy objects allow dot notation)
-        if patient.get('name'):
-            # Name is a list, take the first one
-            name_entry = patient.name[0]
-            # Extract Family (String)
-            family = name_entry.get('family', '')
-            # Extract Given (List of Strings) -> Join them
-            given_list = name_entry.get('given', [])
-            given = " ".join(given_list)
-            full_name = f"{given} {family}".strip()
-        # Add to map
-        patients_map[p_id] = full_name
-
-    # PRINT THE MAP 
-    print("\n--- PATIENT LIST ---")
-    print(f"{'INDEX':<5} | {'ID':<40} | {'NAME'}")
-    print("-" * 70)
-
-    # Convert map to list to allow indexing (0, 1, 2...)
-    # patient_list becomes: [ (id1, name1), (id2, name2), ... ]
-    patient_list = list(patients_map.items())
-
-    for i, (pid, pname) in enumerate(patient_list):
-        print(f"[{i}]   | {pid:<40} | {pname}")
-
-    print("-" * 70)
+    # 4. PRINT REPORT
+    print("\n--Procedure Analysis--")
     
-    # Print statistics about active field
-    print(f"Patients with 'active' field: {has_active_field}")
-    print(f"Patients without 'active' field: {missing_active_field}")
+    # Sort fields alphabetically
+    sorted_fields = sorted(list(all_fields_found))
+
+    for field in sorted_fields:
+        count = field_counts.get(field, 0)
+        
+        if count == 0:
+            print(f"{field:<25} -> Not present")
+        else:
+            percentage = (count / total_records) * 100
+            print(f"{field:<25} -> [{count}] - [{percentage:.1f}%]")
 
 if __name__ == "__main__":
     main()

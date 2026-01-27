@@ -5,7 +5,18 @@ from datetime import datetime
 
 class AppProcedure:
     def __init__(self, raw_json_data: dict):
-        self.resource = FhirProcedure(**raw_json_data)
+        self.raw = raw_json_data
+        
+        # Create a safe copy for validation
+        # We remove fields that are known to cause version-mismatch errors in Pydantic
+        # (performedPeriod is R4/STU3, but library expects occurrencePeriod)
+        safe_data = raw_json_data.copy()
+        keys_to_remove = ['performedPeriod', 'performedDateTime', 'reasonReference']
+        for key in keys_to_remove:
+            if key in safe_data:
+                del safe_data[key]
+
+        self.resource = FhirProcedure(**safe_data)
 
     @property
     def id(self) -> str:
@@ -34,99 +45,67 @@ class AppProcedure:
     # Returns a dict with 'start' and 'end' if available
     @property
     def occurrencePeriod(self) -> Optional[Dict[str, datetime]]:
+        # Try resource first
         if self.resource.occurrencePeriod:
             return {
                 "start": self.resource.occurrencePeriod.start,
                 "end": self.resource.occurrencePeriod.end
+            }
+        
+        # Fallback to raw data for performedPeriod (which was stripped)
+        if 'performedPeriod' in self.raw:
+            p = self.raw['performedPeriod']
+            # Note: These are strings in raw dict, not datetime objects
+            return {
+                "start": p.get('start'), 
+                "end": p.get('end')
             }
         return None
 
     # Helper to get a readable string regardless of whether it is a DateTime or Period
     @property
     def occurrence_display(self) -> str:
+        # 1. Try strict library fields
         if self.occurrenceDateTime:
             return self.occurrenceDateTime.strftime("%Y-%m-%d")
-        if self.occurrencePeriod:
-            start = self.occurrencePeriod['start'].strftime("%Y-%m-%d") if self.occurrencePeriod['start'] else "?"
-            end = self.occurrencePeriod['end'].strftime("%Y-%m-%d") if self.occurrencePeriod['end'] else "?"
+        
+        if self.resource.occurrencePeriod:
+            start = self.resource.occurrencePeriod.start
+            end = self.resource.occurrencePeriod.end
             return f"{start} to {end}"
+
+        p_period = self.raw.get('performedPeriod')
+        if p_period:
+            start = p_period.get('start', '?').split('T')[0]
+            end = p_period.get('end', '?').split('T')[0]
+            return f"{start} to {end}"
+            
         return "Unknown Date"
 
-    # --- BODY SITE & OUTCOME ---
-    # Target body sites (e.g., Left arm, Heart structure)
-    @property
-    def bodySite(self) -> List[str]:
-        if not self.resource.bodySite:
-            return []
-        return [self._get_concept_display(site) for site in self.resource.bodySite]
 
-    # The result of the procedure (e.g., Successful, Failed)
-    @property
-    def outcome(self) -> Optional[str]:
-        return self._get_concept_display(self.resource.outcome)
-
-
-    # Instructions or references for follow-up
-    @property
-    def followUp(self) -> List[str]:
-        if not self.resource.followUp:
-            return []
-        return [self._get_concept_display(item) for item in self.resource.followUp]
-
-    # --- REASONS (Code vs Reference) ---
-    # Consolidates reasonCode (coded reasons like 'Pain') and reasonReference (references to Conditions/Observations)
+    # Consolidates reasonReference (references to Conditions/Observations)
     @property
     def reasons(self) -> List[str]:
         reasons_list = []
 
-        # 1. Reason Codes
-        if self.resource.reasonCode:
-            for code in self.resource.reasonCode:
-                display = self._get_concept_display(code)
-                if display:
-                    reasons_list.append(display)
-
-        # 2. Reason References (If you have resolved references or just want the display)
+        # Reason References (Manually from raw if stripped, or resource if present)
+        # Check resource first
         if self.resource.reasonReference:
             for ref in self.resource.reasonReference:
                 if ref.display:
                     reasons_list.append(ref.display)
                 elif ref.reference:
                     reasons_list.append(f"Ref: {ref.reference}")
+        # Check raw if resource is empty but raw has it
+        elif 'reasonReference' in self.raw:
+            for ref in self.raw['reasonReference']:
+                if ref.get('display'):
+                     reasons_list.append(ref['display'])
+                elif ref.get('reference'):
+                     reasons_list.append(f"Ref: {ref['reference']}")
         
         return reasons_list
 
-    # --- COMPLICATIONS ---
-    # Any complications that occurred during the procedure
-    @property
-    def complications(self) -> List[str]:
-        if not self.resource.complication:
-            return []
-        return [self._get_concept_display(comp) for comp in self.resource.complication]
-
-    # --- FOCAL DEVICE ---
-    # Device changed in procedure
-    # Returns list of dicts: {'action': '...', 'manipulated': '...'}
-    @property
-    def focalDevices(self) -> List[Dict[str, str]]:
-        if not self.resource.focalDevice:
-            return []
-
-        devices = []
-        for device in self.resource.focalDevice:
-            # Action: e.g., Implanted, Explanted, Manipulated
-            action_str = self._get_concept_display(device.action)
-            
-            # Manipulated: Reference to the Device resource
-            manipulated_str = "Unknown Device"
-            if device.manipulated:
-                manipulated_str = device.manipulated.display or device.manipulated.reference or "Unknown Device"
-
-            devices.append({
-                "action": action_str,
-                "manipulated": manipulated_str
-            })
-        return devices
 
     # --- UTIL METHODS ---
     # Helper to safely extract display text from a FHIR CodeableConcept
