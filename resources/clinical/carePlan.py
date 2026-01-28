@@ -6,6 +6,16 @@ from typing import Optional, List, Dict, Union, Any
 from datetime import datetime
 
 class AppCarePlan:
+    
+    # --- Use Cases list---
+    # Elements for use case 1 and 2 are the same
+    uc1_selected_resources = [
+        "Heart failure management - low salt diet",
+        "Cancer care plan - Healthy diet",
+        "Alcoholism counseling",
+        "Smoking cessation therapy"
+    ]
+
     def __init__(self, raw_json_data: dict):
         self.raw = raw_json_data
         
@@ -154,6 +164,29 @@ class AppCarePlan:
 
         return activities_data
 
+    # --- USE CASE FILTERING ---
+    """
+    Checks if this CarePlan is in the selected list for the given use case.
+    It checks if any of the Categories match the list.
+    Arguments:
+        use_case (str): "uc1" or "uc2"
+    """
+    def check_is_selected(self, use_case: str) -> bool:
+        
+        current_categories = [c.strip().lower() for c in self.category]
+        target_list = []
+
+        if use_case.lower() == "uc1" or use_case.lower() == "uc2":
+            target_list = self.uc1_selected_resources
+        else:
+            return False
+
+        # Check if any category matches any item in the target list
+        for item in target_list:
+            if item.lower() in current_categories:
+                return True
+        return False
+
     # --- UTIL METHODS ---
     """
         Helper to safely extract display text from a FHIR CodeableConcept
@@ -204,7 +237,17 @@ class AppCarePlan:
         return hash(self.id)
 
     """
-        Returns: Title (Status)
+    Returns a comprehensive list of all the elements specified in this class.
+    Formatted as 'Element: value'
     """
-    def __str__(self):        
-        return f" {self.status}"
+    def __str__(self):
+        lines = [
+            f"ID: {self.id}",
+            f"Status: {self.status}",
+            f"Intent: {self.intent}",
+            f"Period: {self.period}",
+            f"Categories: {', '.join(self.category) if self.category else 'None'}",
+            f"Addresses: {', '.join(self.addresses) if self.addresses else 'None'}",
+            f"Activity Count: {len(self.activity)}"
+        ]
+        return "\n".join(lines)

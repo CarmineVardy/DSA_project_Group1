@@ -4,6 +4,22 @@ from typing import Optional, List, Dict, Union, Any
 from datetime import date, datetime
 
 class AppImmunization:
+    
+    # --- Use Cases lists---
+    uc1_selected_resources = [
+        "Influenza, seasonal, injectable, preservative free"
+    ]
+
+    uc2_selected_resources = [
+        "Hep A, adult",
+        "Hep B, adult",
+        "Pneumococcal conjugate PCV 13",
+        "Td (adult) preservative free",
+        "meningococcal MCV4P",
+        "pneumococcal polysaccharide vaccine, 23 valent",
+        "zoster"
+    ]
+
     def __init__(self, raw_json_data: dict):
         self.resource = FhirImmunization(**raw_json_data)
 
@@ -39,6 +55,30 @@ class AppImmunization:
             return val.strftime("%Y-%m-%d")
         return str(val) if val else "Unknown Date"
 
+    # --- USE CASE FILTERING ---
+    
+    def check_is_selected(self, use_case: str) -> bool:
+        """
+        Checks if this Immunization is in the selected list for the given use case.
+        Arguments:
+            use_case (str): "uc1" or "uc2"
+        """
+        current_name = self.vaccineCode.strip()
+        target_list = []
+
+        if use_case.lower() == "uc1":
+            target_list = self.uc1_selected_resources
+        elif use_case.lower() == "uc2":
+            target_list = self.uc2_selected_resources
+        else:
+            return False
+
+        # Check for exact match or substring match
+        for item in target_list:
+            if item.lower() == current_name.lower():
+                return True
+        return False
+
     # --- UTIL METHODS ---
     # Helper to safely extract display text from a FHIR CodeableConcept
     # Priority: text -> coding.display -> None
@@ -61,6 +101,17 @@ class AppImmunization:
     def __hash__(self):
         return hash(self.id)
 
-    # Returns: [Date] Vaccine Name (Status)
+
+    """
+    Returns a comprehensive list of all the elements specified in this class.
+    Formatted as 'Element: value'
+    """
     def __str__(self):
-        return f"[{self.occurrence_display}] {self.vaccineCode} ({self.status})"
+
+        lines = [
+            f"ID: {self.id}",
+            f"Status: {self.status}",
+            f"Vaccine Code: {self.vaccineCode}",
+            f"Occurrence Display: {self.occurrence_display}"
+        ]
+        return "\n".join(lines)

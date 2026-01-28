@@ -4,6 +4,26 @@ from datetime import datetime
 
 class AppAllergyIntolerance:
     
+    # --- Use Cases lists---
+    uc1_selected_resources = [
+        "Allergy to dairy product",
+        "Allergy to eggs",
+        "Allergy to fish",
+        "Allergy to peanuts",
+        "Allergy to wheat",
+        "Shellfish allergy"
+    ]
+
+    uc2_selected_resources = [
+        "Allergy to dairy product",
+        "Allergy to eggs",
+        "Allergy to fish",
+        "Allergy to peanuts",
+        "Allergy to wheat",
+        "Shellfish allergy",
+        "Latex allergy"
+    ]
+    
     # Mapping SNOMED CT codes to specific readable string representations of the specific allergies
     SNOMED_MAPPING: Dict[str, str] = {
         "425525006": "Allergy to dairy product",
@@ -124,6 +144,30 @@ class AppAllergyIntolerance:
                     return coding['display']
         return None
 
+    # --- USE CASE FILTERING ---
+    
+    def check_is_selected(self, use_case: str) -> bool:
+        """
+        Checks if this allergy is in the selected list for the given use case.
+        Arguments:
+            use_case (str): "uc1" or "uc2"
+        """
+        current_name = self._get_display_name().strip()
+        target_list = []
+
+        if use_case.lower() == "uc1":
+            target_list = self.uc1_selected_resources
+        elif use_case.lower() == "uc2":
+            target_list = self.uc2_selected_resources
+        else:
+            return False
+
+        # Check for exact match or substring match (case-insensitive)
+        for item in target_list:
+            if item.lower() == current_name.lower():
+                return True
+        return False
+
     # UTIL METHODS
     def __eq__(self, other):
         if not isinstance(other, AppAllergyIntolerance):
@@ -133,6 +177,19 @@ class AppAllergyIntolerance:
     def __hash__(self):
         return hash(self.id)
 
-    # Returns the type of allergy
     def __str__(self):
-        return self._get_display_name()
+        """
+        Returns a comprehensive list of all the elements specified in this class.
+        Formatted as 'Element: value'.
+        """
+        lines = [
+            f"ID: {self.id}",
+            f"Display: {self._get_display_name()}",
+            f"Type: {self.type or 'None'}",
+            f"Category: {self.category}",
+            f"Clinical Status: {self.clinical_status}",
+            f"Verification Status: {self.verification_status}",
+            f"Criticality: {self.criticality}",
+            f"Recorded Date: {self.recordedDate}"
+        ]
+        return "\n".join(lines)
