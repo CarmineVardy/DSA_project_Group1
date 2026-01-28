@@ -36,11 +36,11 @@ print("Setting the prompt...")
 messages = [ 
 	{
 		"role": "system", 
-		"content": "You are an expert trained on healthcare and biomedical domain!"
+		"content": "You are an expert trained on healthcare and biomedical domain!I'm a 35-year-old male with an allergy to wheat"
 	}, 
 	{
 		"role": "user", 
-		"content": "I'm a 35-year-old male and for the past few months, I've been experiencing fatigue, increased sensitivity to cold, and dry, itchy skin. What is the diagnosis here?"
+		"content": "Can you suggest a weekly diet, from monday to sunday?"
 	}, 
 ]
 print("Instruction: ", messages[0]["content"])

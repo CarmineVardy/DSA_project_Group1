@@ -7,19 +7,16 @@ from fhirpy import SyncFHIRClient
 load_dotenv()
 SERVER_URL = os.getenv("SERVER_URL")
 
-# List of standard Procedure fields to check for
+# List of standard Device fields to check for
 # Based on FHIR R4 Specification
 EXPECTED_FIELDS = [
-    'resourceType', 'id', 'identifier', 'instantiatesCanonical', 
-    'instantiatesUri', 'basedOn', 'partOf', 'status', 'statusReason', 
-    'category', 'code', 'subject', 'encounter', 
-    # performed[x] polymorphic fields:
-    'performedDateTime', 'performedPeriod', 'performedString', 
-    'performedAge', 'performedRange', 
-    'recorder', 'asserter', 'performer', 'location', 'reasonCode', 
-    'reasonReference', 'bodySite', 'outcome', 'report', 'complication', 
-    'complicationDetail', 'followUp', 'note', 'focalDevice', 
-    'usedReference', 'usedCode'
+    'resourceType', 'id', 'identifier', 'definition', 'udiCarrier', 
+    'status', 'statusReason', 'distinctIdentifier', 
+    'manufacturer', 'manufactureDate', 'expirationDate', 
+    'lotNumber', 'serialNumber', 'deviceName', 'modelNumber', 
+    'partNumber', 'type', 'specialization', 'version', 
+    'property', 'patient', 'owner', 'contact', 'location', 
+    'url', 'note', 'safety', 'parent'
 ]
 
 def main():
@@ -31,22 +28,22 @@ def main():
         print(f"Error: Could not create client. {e}")
         sys.exit(1)
 
-    # 2. FETCH DATA (Procedure)
-    print("Fetching Procedures from server...")
+    # 2. FETCH DATA (Device)
+    print("Fetching Devices from server...")
     try:
         # Fetch all records
-        # Note: We query 'Procedure' 
-        procedures = client.resources('Procedure').sort('_lastUpdated').fetch_all()
+        # Note: We query 'Device'
+        devices = client.resources('Device').sort('_lastUpdated').fetch_all()
     except Exception as e:
         print(f"Connection Error: {e}")
         sys.exit(1)
 
-    if not procedures:
-        print("No Procedure records found on the server.")
+    if not devices:
+        print("No Device records found on the server.")
         sys.exit(1)
 
-    total_records = len(procedures)
-    print(f"{total_records} Procedures found. Analyzing field coverage...")
+    total_records = len(devices)
+    print(f"{total_records} Devices found. Analyzing field coverage...")
 
     # 3. ANALYZE FIELDS
     # Initialize set with expected fields so they always appear in report
@@ -54,10 +51,10 @@ def main():
     field_counts = {field: 0 for field in EXPECTED_FIELDS}
 
     # Iterate with loading bar
-    for proc in tqdm(procedures, desc="Scanning Attributes"):
+    for dev in tqdm(devices, desc="Scanning Attributes"):
         
         # Serialize to dictionary to inspect actual JSON keys
-        data = proc.serialize() 
+        data = dev.serialize() 
         
         for key, value in data.items():
             # Check if value exists (not None)
@@ -72,7 +69,7 @@ def main():
                     field_counts[key] = 1
 
     # 4. PRINT REPORT
-    print("\n--Procedure Analysis--")
+    print("\n--Device--")
     
     # Sort fields alphabetically
     sorted_fields = sorted(list(all_fields_found))
