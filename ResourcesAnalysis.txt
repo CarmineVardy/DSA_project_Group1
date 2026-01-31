@@ -1,0 +1,712 @@
+================================================================================
+RISULTATI: Device
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mudiCarrier                     | 416        | 100.0    % | ✅ CORE[0m
+[92mdistinctIdentifier             | 416        | 100.0    % | ✅ CORE[0m
+[92mstatus                         | 416        | 100.0    % | ✅ CORE[0m
+[92mmanufactureDate                | 416        | 100.0    % | ✅ CORE[0m
+[92mexpirationDate                 | 416        | 100.0    % | ✅ CORE[0m
+[92mlotNumber                      | 416        | 100.0    % | ✅ CORE[0m
+[92mserialNumber                   | 416        | 100.0    % | ✅ CORE[0m
+[92mdeviceName                     | 416        | 100.0    % | ✅ CORE[0m
+[92mtype                           | 416        | 100.0    % | ✅ CORE[0m
+[92mpatient                        | 416        | 100.0    % | ✅ CORE[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdefinition                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mstatusReason                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmanufacturer                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmodelNumber                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91mpartNumber                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mspecialization                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mversion                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mproperty                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mowner                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcontact                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mlocation                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91murl                            | 0          | 0.0      % | ❌ DISCARD[0m
+[91mparent                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91msafety                         | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. STATUS:
+   - active: 416
+
+2. TOP 5 DEVICE TYPES (Cosa sono):
+   - Implantable defibrillator, device (physical object): 180
+   - Coronary artery stent (physical object): 145
+   - Implantable cardiac pacemaker (physical object): 85
+   - Left ventricular assist device (physical object): 6
+
+3. DEVICE NAME TYPES (Format):
+   - user-friendly-name: 416
+
+4. MANUFACTURERS:
+
+5. UDI (Identificativi Univoci):
+   - Device con UDI Block: 416
+   - Con Barcode (AIDC): 0
+   - Con Codice Leggibile (HRF): 416
+
+
+
+================================================================================
+RISULTATI: Patient
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92midentifier                     | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mname                           | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mtelecom                        | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mgender                         | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mbirthDate                      | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92maddress                        | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mmaritalStatus                  | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mcommunication                  | 500        | 100.0    % | ✅ CORE (Mandatory)[0m
+[92mmultipleBirthBoolean           | 483        | 96.6     % | ✅ CORE (Mandatory)[0m
+[93mdeceasedDateTime               | 326        | 65.2     % | ⚠️ CHECK (Critical)[0m
+[93mmultipleBirthInteger           | 17         | 3.4      % | ⚠️ CHECK[0m
+[91mactive                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdeceasedBoolean                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mphoto                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcontact                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mgeneralPractitioner            | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmanagingOrganization           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mlink                           | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI DEMOGRAFICA E SOCIALE
+--------------------------------------------------------------------------------
+1. GENDER DISTRIBUTION:
+   - female: 217
+   - male: 283
+
+2. MARITAL STATUS:
+   - M: 396
+   - S: 98
+   - Never Married: 6
+
+3. MORTALITY (Deceased Status):
+   - Vivi (Presunti): 174
+   - Deceduti (Flag Booleano): 0
+   - Deceduti (Con Data/Ora): 326
+
+4. LANGUAGES (Communication):
+   - en-US: 455
+   - es: 30
+   - de-DE: 4
+   - zh: 3
+   - vi: 3
+
+5. MULTIPLE BIRTHS (Parti Gemellari):
+   - Flag Booleano: 0
+   - Numero Intei (es. 3 gemelli): 17
+
+
+================================================================================
+RISULTATI: AllergyIntolerance
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mclinicalStatus                 | 106        | 100.0    % | ✅ CORE[0m
+[92mverificationStatus             | 106        | 100.0    % | ✅ CORE[0m
+[92mtype                           | 106        | 100.0    % | ✅ CORE[0m
+[92mcategory                       | 106        | 100.0    % | ✅ CORE[0m
+[92mcriticality                    | 106        | 100.0    % | ✅ CORE[0m
+[92mcode                           | 106        | 100.0    % | ✅ CORE[0m
+[92mpatient                        | 106        | 100.0    % | ✅ CORE[0m
+[92mrecordedDate                   | 106        | 100.0    % | ✅ CORE[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mencounter                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mrecorder                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91masserter                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mlastOccurrence                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetDateTime                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetAge                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetPeriod                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetRange                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetString                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreaction                       | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CLINICA
+--------------------------------------------------------------------------------
+1. TOP ALLERGENS (Cause):
+   - Shellfish allergy: 21
+   - Allergy to mould: 19
+   - Dander (animal) allergy: 12
+   - Allergy to nut: 11
+   - Allergy to peanuts: 10
+
+2. TYPE & CATEGORY:
+   - Types: {'allergy': 106}
+   - Categories: {'food': 106}
+
+3. SEVERITY & CRITICALITY:
+   - Criticality Flags: {'low': 106}
+   - Reaction Severity: {}
+
+4. REACTIONS (Sintomi Comuni):
+   - Record con reazioni documentate: 0
+
+5. STATUS (Active/Resolved):
+   - active: 106
+
+
+
+================================================================================
+RISULTATI: CarePlan
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mstatus                         | 6135       | 100.0    % | ✅ CORE[0m
+[92mintent                         | 6135       | 100.0    % | ✅ CORE[0m
+[92mcategory                       | 6135       | 100.0    % | ✅ CORE[0m
+[92msubject                        | 6135       | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 6135       | 100.0    % | ✅ CORE[0m
+[92mperiod                         | 6135       | 100.0    % | ✅ CORE[0m
+[92mcareTeam                       | 6135       | 100.0    % | ✅ CORE[0m
+[92mactivity                       | 6128       | 99.9     % | ✅ CORE[0m
+[92maddresses                      | 5304       | 86.5     % | ✅ CORE (Context)[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91minstantiatesCanonical          | 0          | 0.0      % | ❌ DISCARD[0m
+[91minstantiatesUri                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbasedOn                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreplaces                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mpartOf                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mtitle                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdescription                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcreated                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mauthor                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcontributor                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91msupportingInfo                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mgoal                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI STRUTTURA E CONTENUTO
+--------------------------------------------------------------------------------
+1. STATUS & INTENT:
+   - Statuses: {'completed': 2765, 'active': 3370}
+   - Intents:  {'order': 6135}
+
+2. CATEGORIES (Tipo di Piano):
+   - Code: 6135
+   - Respiratory therapy: 930
+   - Diabetes self management plan: 673
+   - Inpatient care plan (record artifact): 672
+   - Fracture care: 474
+
+3. ADDRESSES (Condizioni Trattate):
+   - Piani collegati a Conditions: 5304
+   - Totale link a malattie: 5575
+
+4. ACTIVITY STRUCTURE (Importante per il parser):
+   - Totale Attività trovate: 13815
+   - Definite via Reference (Link): 0 (es. punta a MedicationRequest)
+   - Definite via Detail (Inline): 13815 (es. 'Dietary advice')
+
+5. TOP INLINE ACTIVITIES (Se presenti):
+   - Recommendation to avoid exercise: 930
+   - Deep breathing and coughing exercises: 930
+   - low salt diet education: 757
+   - physical exercise: 757
+   - Exercise therapy: 727
+
+
+--------------------------------------------------------------------------------
+RISULTATI ACTIVITY (CarePlan analizzati: 6135)
+Totale singole Activity analizzate: 13815
+--------------------------------------------------------------------------------
+LIVELLO 1: Struttura Activity (Reference vs Detail)
+ - detail                   : 13815 (100.0%)
+
+LIVELLO 2: Contenuto di 'detail' (Su 13815 activity che lo usano)
+ - code                     : 13815 (100.0%)
+ - status                   : 13815 (100.0%)
+ - location                 : 13815 (100.0%)
+================================================================================
+
+
+================================================================================
+RISULTATI: Condition
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mclinicalStatus                 | 15956      | 100.0    % | ✅ CORE[0m
+[92mverificationStatus             | 15956      | 100.0    % | ✅ CORE[0m
+[92mcategory                       | 15956      | 100.0    % | ✅ CORE[0m
+[92mcode                           | 15956      | 100.0    % | ✅ CORE[0m
+[92msubject                        | 15956      | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 15956      | 100.0    % | ✅ CORE[0m
+[92mrecordedDate                   | 15956      | 100.0    % | ✅ CORE[0m
+[92monsetDateTime                  | 15956      | 100.0    % | ✅ CORE[0m
+[96mabatementDateTime              | 4838       | 30.3     % | ⏰ END-DATE[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mseverity                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbodySite                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mrecorder                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91masserter                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetAge                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetPeriod                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetRange                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91monsetString                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91mabatementAge                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mabatementPeriod                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mabatementRange                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mabatementString                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mstage                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mevidence                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CLINICA
+--------------------------------------------------------------------------------
+1. CLINICAL STATUS (Active vs Resolved):
+   - resolved: 4838
+   - active: 11118
+
+2. VERIFICATION STATUS:
+   - confirmed: 15956
+
+3. TIMING (Onset & Abatement):
+   - Formati Onset usati: {'DateTime': 15956}
+   - Condizioni GUARITE (Abated): 4838 su 15956
+
+4. EVIDENCE & STAGES:
+   - Condizioni con 'Evidence' dettagliata: 0
+
+5. TOP 5 CONDITIONS (Patologie frequenti):
+   - Viral sinusitis (disorder): 1421
+   - Acute viral pharyngitis (disorder): 774
+   - Body mass index 30+ - obesity (finding): 719
+   - Stroke: 698
+   - Prediabetes: 602
+
+================================================================================
+RISULTATI: Procedure
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mstatus                         | 56092      | 100.0    % | ✅ CORE[0m
+[92mcode                           | 56092      | 100.0    % | ✅ CORE[0m
+[92msubject                        | 56092      | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 56092      | 100.0    % | ✅ CORE[0m
+[92mperformedPeriod                | 56092      | 100.0    % | ✅ CORE[0m
+[92mlocation                       | 56092      | 100.0    % | ✅ CORE[0m
+[92mreasonReference                | 20357      | 36.3     % | ✅ CORE (Link)[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91minstantiatesCanonical          | 0          | 0.0      % | ❌ DISCARD[0m
+[91minstantiatesUri                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbasedOn                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mpartOf                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mstatusReason                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcategory                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mrecorder                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91masserter                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformedDateTime              | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformedString                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformedAge                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformedRange                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformer                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbodySite                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreasonCode                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91moutcome                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreport                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcomplication                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcomplicationDetail             | 0          | 0.0      % | ❌ DISCARD[0m
+[91mfollowUp                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mfocalDevice                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91musedReference                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91musedCode                       | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. STATUS (Stato Procedura):
+   - completed: 56092
+
+2. TIMING (Performed[x]):
+   - performedPeriod: 56092
+
+3. REASON (Giustificazione):
+   - Con codice motivo (reasonCode): 0
+   - Con link a diagnosi (reasonReference): 20357
+
+4. DETAILS (Devices & Items):
+   - Procedure su Focal Device (Impianti/Rimozioni): 0
+   - Procedure con Used Items (usedReference/Code): 0
+
+5. TOP 5 PROCEDURE (Esempi):
+   - Renal dialysis (procedure): 13508
+   - Medication Reconciliation (procedure): 11185
+   - Electrical cardioversion: 6616
+   - Echocardiography (procedure): 2388
+   - Combined chemotherapy and radiation therapy (procedure): 1814
+
+
+================================================================================
+RISULTATI: DiagnosticReport
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mstatus                         | 201152     | 100.0    % | ✅ CORE[0m
+[92mcategory                       | 201152     | 100.0    % | ✅ CORE[0m
+[92mcode                           | 201152     | 100.0    % | ✅ CORE[0m
+[92msubject                        | 201152     | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 201152     | 100.0    % | ✅ CORE[0m
+[92meffectiveDateTime              | 201152     | 100.0    % | ✅ CORE[0m
+[92missued                         | 201152     | 100.0    % | ✅ CORE[0m
+[92mperformer                      | 201152     | 100.0    % | ✅ CORE[0m
+[92mpresentedForm                  | 144365     | 71.8     % | ✅ CORE (Note)[0m
+[92mresult                         | 57119      | 28.4     % | ✅ CORE (Labs)[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbasedOn                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mresultsInterpreter             | 0          | 0.0      % | ❌ DISCARD[0m
+[91mspecimen                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91meffectivePeriod                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mimagingStudy                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmedia                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mconclusion                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mconclusionCode                 | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. CATEGORIE (Tipi di report):
+   - History and physical note: 143946
+   - Laboratory: 57206
+
+2. ALLEGATI (presentedForm - Dove sono le note):
+   - Con dati Base64 (Testo nascosto): 143946
+   - Con URL esterni: 419
+   - Tipi MIME trovati:
+     * text/plain: 143946
+     * text/csv: 419
+
+3. STRUTTURA:
+   - Con link a Observation (result): 57119
+   - Con Conclusioni testuali esplicite: 0
+   - Con Media (Immagini/ECG): 0
+
+
+================================================================================
+RISULTATI: DocumentReference
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92midentifier                     | 24797      | 100.0    % | ✅ MODEL[0m
+[92mstatus                         | 24797      | 100.0    % | ✅ MODEL[0m
+[92mtype                           | 24797      | 100.0    % | ✅ MODEL[0m
+[92mcategory                       | 24797      | 100.0    % | ✅ MODEL[0m
+[92msubject                        | 24797      | 100.0    % | ✅ MODEL[0m
+[92mcontext                        | 24797      | 100.0    % | ✅ MODEL[0m
+[92mdate                           | 24797      | 100.0    % | ✅ MODEL[0m
+[92mauthor                         | 24797      | 100.0    % | ✅ MODEL[0m
+[92mcustodian                      | 24797      | 100.0    % | ✅ MODEL[0m
+[92mcontent                        | 24797      | 100.0    % | ✅ MODEL[0m
+[91mmasterIdentifier               | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdocStatus                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mauthenticator                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91mrelatesTo                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdescription                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91msecurityLabel                  | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO (Dove sono i dati?)
+--------------------------------------------------------------------------------
+1. TIPI DI FILE (MIME Types):
+   - text/plain          : 24797
+
+2. FORMATO DATI:
+   - Base64 (Testo incluso): 24797 (Priorità ALTA per Prompt)
+   - URL Esterni (File link): 0 (Es. DNA/DICOM)
+
+3. TIPI DOCUMENTO (Top 5):
+   - History and physical note: 24797
+
+
+================================================================================
+RISULTATI: Observation
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mstatus                         | 669898     | 100.0    % | ✅ CORE[0m
+[92mcategory                       | 669898     | 100.0    % | ✅ CORE[0m
+[92mcode                           | 669898     | 100.0    % | ✅ CORE[0m
+[92msubject                        | 669898     | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 669898     | 100.0    % | ✅ CORE[0m
+[92meffectiveDateTime              | 669898     | 100.0    % | ✅ CORE[0m
+[92missued                         | 669898     | 100.0    % | ✅ CORE[0m
+[92mvalueQuantity                  | 585600     | 87.4     % | ✅ CORE (Val)[0m
+[92mvalueCodeableConcept           | 43686      | 6.5      % | ✅ CORE (Val)[0m
+[92mcomponent                      | 27634      | 4.1      % | ✅ CORE (BP)[0m
+[92mvalueSampledData               | 1072       | 0.2      % | ✅ CORE (Val)[0m
+[92mvalueString                    | 330        | 0.0      % | ✅ CORE (Val)[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbasedOn                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mpartOf                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mfocus                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91meffectivePeriod                | 0          | 0.0      % | ❌ DISCARD[0m
+[91meffectiveTiming                | 0          | 0.0      % | ❌ DISCARD[0m
+[91meffectiveInstant               | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformer                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueBoolean                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueInteger                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueRange                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueRatio                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueTime                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueDateTime                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvaluePeriod                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueAttachment                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mvalueReference                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdataAbsentReason               | 0          | 0.0      % | ❌ DISCARD[0m
+[91minterpretation                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbodySite                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbodyStructure                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmethod                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mspecimen                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdevice                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreferenceRange                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91mhasMember                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mderivedFrom                    | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. TIPI DI VALORE (Come sono salvati i dati?):
+   - valueQuantity: 585600
+   - valueCodeableConcept: 43686
+   - valueSampledData: 1072
+   - valueString: 330
+
+2. COMPONENTI (Observation complesse):
+   - Observation con componenti: 27634 (Probabile Pressione Sanguigna)
+   - Tipi di valore nei componenti:
+     * valueQuantity: 55268
+
+3. CATEGORIE:
+   - vital-signs: 178956
+   - laboratory: 452476
+   - survey: 20706
+   - Uncoded: 11576
+   - exam: 3360
+   - procedure: 2378
+   - therapy: 27
+   - social-history: 390
+   - imaging: 29
+
+4. INTERPRETAZIONI (Flag Lab):
+
+5. DATI SPECIALI:
+   - ECG/Sampled Data: 1072
+   - Reference Range (Valori normali): 0
+
+================================================================================
+RISULTATI: Immunization
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mstatus                         | 11900      | 100.0    % | ✅ CORE[0m
+[92mvaccineCode                    | 11900      | 100.0    % | ✅ CORE[0m
+[92mpatient                        | 11900      | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 11900      | 100.0    % | ✅ CORE[0m
+[92moccurrenceDateTime             | 11900      | 100.0    % | ✅ CORE[0m
+[92mprimarySource                  | 11900      | 100.0    % | ✅ CORE[0m
+[92mlocation                       | 11900      | 100.0    % | ✅ CORE[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mstatusReason                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91madministeredProduct            | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmanufacturer                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mlotNumber                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mexpirationDate                 | 0          | 0.0      % | ❌ DISCARD[0m
+[91msupportingInformation          | 0          | 0.0      % | ❌ DISCARD[0m
+[91moccurrenceString               | 0          | 0.0      % | ❌ DISCARD[0m
+[91minformationSource              | 0          | 0.0      % | ❌ DISCARD[0m
+[91msite                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mroute                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdoseQuantity                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformer                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreason                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreasonCode                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreasonReference                | 0          | 0.0      % | ❌ DISCARD[0m
+[91misSubpotent                    | 0          | 0.0      % | ❌ DISCARD[0m
+[91msubpotentReason                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mprogramEligibility             | 0          | 0.0      % | ❌ DISCARD[0m
+[91mfundingSource                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreaction                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mprotocolApplied                | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. STATUS:
+   - completed: 11900
+
+2. PROTOCOLLI (Dose X di Y):
+   - Vaccini parte di un protocollo: 0
+   - Con numero dose: 0
+   - Con serie totale: 0
+
+3. REAZIONI AVVERSE:
+   - Segnalate: 0
+
+4. TOP 5 VACCINI (Esempi):
+   - Influenza, seasonal, injectable, preservative free: 10752
+   - Td (adult) preservative free: 874
+   - pneumococcal polysaccharide vaccine, 23 valent: 160
+   - Pneumococcal conjugate PCV 13: 52
+   - zoster: 35
+
+================================================================================
+RISULTATI: MedicationRequests
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mstatus                         | 209401     | 100.0    % | ✅ CORE[0m
+[92mintent                         | 209401     | 100.0    % | ✅ CORE[0m
+[92msubject                        | 209401     | 100.0    % | ✅ CORE[0m
+[92mencounter                      | 209401     | 100.0    % | ✅ CORE[0m
+[92mauthoredOn                     | 209401     | 100.0    % | ✅ CORE[0m
+[92mrequester                      | 209401     | 100.0    % | ✅ CORE[0m
+[92mmedicationCodeableConcept      | 208051     | 99.4     % | ✅ CORE[0m
+[92mreasonReference                | 148764     | 71.0     % | ✅ CORE (Link)[0m
+[92mdosageInstruction              | 94874      | 45.3     % | ✅ CORE (Dose)[0m
+[93mmedicationReference            | 1350       | 0.6      % | ⚠️ CHECK[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mstatusReason                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcategory                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mpriority                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdoNotPerform                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreportedBoolean                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreportedReference              | 0          | 0.0      % | ❌ DISCARD[0m
+[91msupportingInformation          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformer                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mperformerType                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91mrecorder                       | 0          | 0.0      % | ❌ DISCARD[0m
+[91mreasonCode                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91minstantiatesCanonical          | 0          | 0.0      % | ❌ DISCARD[0m
+[91minstantiatesUri                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbasedOn                        | 0          | 0.0      % | ❌ DISCARD[0m
+[91mgroupIdentifier                | 0          | 0.0      % | ❌ DISCARD[0m
+[91mcourseOfTherapyType            | 0          | 0.0      % | ❌ DISCARD[0m
+[91minsurance                      | 0          | 0.0      % | ❌ DISCARD[0m
+[91mnote                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdispenseRequest                | 0          | 0.0      % | ❌ DISCARD[0m
+[91msubstitution                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mpriorPrescription              | 0          | 0.0      % | ❌ DISCARD[0m
+[91mdetectedIssue                  | 0          | 0.0      % | ❌ DISCARD[0m
+[91meventHistory                   | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. STATUS (Stato Terapia):
+   - stopped: 202978
+     -> Farmaci Interrotti
+   - active: 6423
+     -> Farmaci Attuali
+
+2. MEDICATION TYPE:
+   - Codici diretti (RxNorm): 208051
+   - Riferimenti esterni: 1350
+
+3. DOSAGGIO (Istruzioni):
+   - Prescrizioni con istruzioni: 94874
+   - Con testo leggibile ('text'): 11037 (PRIORITÀ)
+   - Solo dati strutturati: 83837
+
+================================================================================
+MEGA DEBUG: Analisi Frequenza Campi DOSAGE INSTRUCTION (MedicationRequest)
+================================================================================
+Scansione MedicationRequest in corso...
+
+--------------------------------------------------------------------------------
+RISULTATI ANALISI DOSAGE (Requests analizzate: 209401)
+Totale Istruzioni Dosage trovate: 94874
+--------------------------------------------------------------------------------
+LIVELLO 1: Campi Dosage Principali
+ - sequence                 : 94874 (100.0%) 
+ - asNeededBoolean          : 94874 (100.0%) (Al bisogno?)
+ - timing                   : 83884 (88.4%) (Orari/Frequenza)
+ - doseAndRate              : 83884 (88.4%) (Quantità esatta)
+ - text                     : 11037 (11.6%) (Istruzioni umane '1 cp dopo i pasti')
+ - additionalInstruction    : 47    (0.0%) 
+
+LIVELLO 2: Dettagli 'doseAndRate' (Cosa c'è dentro?)
+ - type                     : 83884 (volte presente)
+ - doseQuantity             : 83884 (volte presente)
+
+--------------------------------------------------------------------------------
+RISULTATI ANALISI TIMING (Trovati 83884 oggetti Timing)
+--------------------------------------------------------------------------------
+LIVELLO 1: Struttura Timing Base
+ - repeat              : 83884 (100.0%)
+
+LIVELLO 2: Dettagli 'repeat' (Logica ricorrenza)
+ - frequency           : 83884 (100.0%) <-- Volte per periodo (es. 3 volte)
+ - period              : 83884 (100.0%) <-- Ogni quanto (es. 8 ore)
+ - periodUnit          : 83884 (100.0%) <-- Ogni quanto (es. 8 ore)
+
+LIVELLO 3: Top Values (Cosa contengono?)
+================================================================================
+
+
+================================================================================
+
+
+4. MOTIVO (Reason):
+   - Link a Condition (reasonReference): 148764
+
+5. TOP 5 FARMACI (Esempi):
+   - lisinopril 10 MG Oral Tablet: 27476
+   - insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]: 24894
+   - Hydrochlorothiazide 25 MG Oral Tablet: 23452
+   - amLODIPine 2.5 MG Oral Tablet: 20801
+   - 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet: 17705
+
+
+================================================================================
+RISULTATI: Medication
+================================================================================
+CAMPO                          | COUNT      | FREQ %     | DECISIONE
+--------------------------------------------------------------------------------
+[92mcode                           | 1350       | 100.0    % | ✅ CORE[0m
+[92mstatus                         | 1350       | 100.0    % | ✅ CORE[0m
+[91midentifier                     | 0          | 0.0      % | ❌ DISCARD[0m
+[91mmanufacturer                   | 0          | 0.0      % | ❌ DISCARD[0m
+[91mform                           | 0          | 0.0      % | ❌ DISCARD[0m
+[91mamount                         | 0          | 0.0      % | ❌ DISCARD[0m
+[91mbatch                          | 0          | 0.0      % | ❌ DISCARD[0m
+[91mingredient                     | 0          | 0.0      % | ❌ DISCARD[0m
+--------------------------------------------------------------------------------
+ANALISI CONTENUTO
+--------------------------------------------------------------------------------
+1. NOMI FARMACI (Top 5):
+   - Calcium Carbonate 1250 MG / Cholecalciferol 1000 UNT / Vitamin K 0.4 MG Chewable Tablet: 365
+   - 10 ML Furosemide 10 MG/ML Injection: 319
+   - Cisplatin 50 MG Injection: 303
+   - PACLitaxel 100 MG Injection: 166
+   - Etoposide 100 MG Injection: 137
+
+2. FORMA FARMACEUTICA:
+
+3. INGREDIENTI (Composizione):
+   - Risorse con ingredienti: 0
+   - Con dosaggio (Strength): 0
+
+4. DETTAGLI LOTTO (Batch):
+   - Risorse con dati lotto: 0
+   - Con Scadenza: 0
+
+
+
+
+
+CODEABLE CONCEPT (Totale analizzati: 149652)
+ - coding: 149283 (99.8%) -> Lista di codici
+ - text:   82129 (54.9%) -> Testo libero
+
+CODING (Totale analizzati: 163696)
+ - system      : 163696 (100.0%)
+ - version     : 0     (0.0%)
+ - code        : 163426 (99.8%)
+ - display     : 137079 (83.7%)
+ - userSelected: 0     (0.0%)

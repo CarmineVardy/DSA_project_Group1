@@ -1,0 +1,2767 @@
+DEBUG: Loaded 1 medications into map.
+DEVICES:
+- Coronary artery stent (physical object) (Active)
+  Ref: SNOMED: 705643001
+ALLERGIES:
+CARE PLANS:
+- Self-care interventions (procedure) (Active, Start: 1926-06-19)
+  Activities:
+  * Food allergy diet (in-progress)
+    Ref: SNOMED: 409002
+  * Allergy education (in-progress)
+    Ref: SNOMED: 58332002
+  * Allergy education (in-progress)
+    Ref: SNOMED: 58332002
+- Hyperlipidemia clinical management plan (Active, Start: 1992-03-07)
+  Activities:
+  * low salt diet education (in-progress)
+    Ref: SNOMED: 183063000
+  * physical exercise (in-progress)
+    Ref: SNOMED: 183301007
+CONDITIONS:
+- Chronic paralysis due to lesion of spinal cord (Active) [Onset: 1955-10-04]
+  Ref: SNOMED: 698754002
+- Body mass index 30+ - obesity (finding) (Active) [Onset: 1965-11-20]
+  Ref: SNOMED: 162864005
+- Osteoporosis (disorder) (Active) [Onset: 1986-01-11]
+  Ref: SNOMED: 64859006
+- Hyperlipidemia (Active) [Onset: 1992-02-15]
+  Ref: SNOMED: 55822004
+- Stroke (Active) [Onset: 1993-12-11]
+  Ref: SNOMED: 230690007
+- Numbness of face (finding) (Active) [Onset: 1994-01-15]
+  Ref: SNOMED: 309557009
+- Impaired cognition (finding) (Active) [Onset: 1994-01-15]
+  Ref: SNOMED: 386806002
+- Abnormal gait (finding) (Active) [Onset: 1994-01-15]
+  Ref: SNOMED: 22325002
+- Silent micro-hemorrhage of brain (disorder) (Active) [Onset: 1994-01-15]
+  Ref: SNOMED: 723857007
+- Coronary Heart Disease (Active) [Onset: 2003-04-19]
+  Ref: SNOMED: 53741008
+- Myocardial Infarction (Active) [Onset: 2008-03-22]
+  Ref: SNOMED: 22298006
+- History of myocardial infarction (situation) (Active) [Onset: 2008-03-22]
+  Ref: SNOMED: 399211009
+PROCEDURES:
+- Medication Reconciliation (procedure) (Completed) [2000-04-01]
+  Ref: SNOMED: 430193006
+- Medication Reconciliation (procedure) (Completed) [2007-05-12]
+  Ref: SNOMED: 430193006
+- Echocardiography (procedure) (Completed) [2008-03-22]
+  Ref: SNOMED: 40701008
+- Percutaneous coronary intervention (Completed) [2008-03-22]
+  Ref: SNOMED: 415070008
+- Coronary artery bypass grafting (Completed) [2008-03-22]
+  Ref: SNOMED: 232717009
+DIAGNOSTIC REPORTS:
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2002-04-13
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 76 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following reports were created:
+  - complete blood count (hemogram) panel - blood by automated count
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2003-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 77 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2003-04-19
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 77 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  Patient is presenting with coronary heart disease.
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following reports were created:
+  - lipid panel
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2004-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 78 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2004-04-24
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 78 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2005-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 79 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2005-04-30
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 79 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2007-05-12
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 81 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free, td (adult) preservative free.
+  The following procedures were conducted:
+  - medication reconciliation (procedure)
+  The following reports were created:
+  - complete blood count (hemogram) panel - blood by automated count
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2008-03-22
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  Patient is presenting with myocardial infarction, history of myocardial infarction (situation).
+  ## Plan
+  The following procedures were conducted:
+  - echocardiography (procedure)
+  - percutaneous coronary intervention
+  - coronary artery bypass grafting
+  The patient was prescribed the following medications:
+  - atorvastatin 80 mg oral tablet
+  - captopril 25 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2008-03-29
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; atorvastatin 80 mg oral tablet; clopidogrel 75 mg oral tablet; captopril 25 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - u.s. standard certificate of death - 2003 revision
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2008-03-03
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1926-06-19
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 7 month-old non-hispanic white male.
+  # Social History
+  Patient has never smoked and is an alcoholic.
+  Patient comes from a high socioeconomic background.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  ## Plan
+  The patient was placed on a careplan:
+  - self-care interventions (procedure)
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1955-10-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 29 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with chronic paralysis due to lesion of spinal cord.
+  ## Plan
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1965-11-20
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 40 year-old non-hispanic white male. Patient has a history of chronic paralysis due to lesion of spinal cord.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with body mass index 30+ - obesity (finding).
+  ## Plan
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1986-01-11
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 60 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with osteoporosis (disorder).
+  ## Plan
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1992-02-15
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 66 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with hyperlipidemia.
+  ## Plan
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1992-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 66 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+  The patient was placed on a careplan:
+  - hyperlipidemia clinical management plan
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1993-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 67 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1993-12-11
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 68 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  Patient is presenting with stroke.
+  ## Plan
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1994-01-15
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 68 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  Patient is presenting with numbness of face (finding), impaired cognition (finding), abnormal gait (finding), silent micro-hemorrhage of brain (disorder).
+  ## Plan
+  The following imaging studies were conducted:
+  - magnetic resonance imaging of head (procedure)  stored in ./output/dicom/Abe604_Frami345_b8dd1798-beef-094d-1be4-f90ee0e6b7d51.2.840.99999999.26401232.758647660200.dcm
+  The patient was prescribed the following medications:
+  - calcium carbonate 1250 mg / cholecalciferol 1000 unt / vitamin k 0.4 mg chewable tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1994-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 68 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1995-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 69 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1996-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 70 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1997-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 71 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1998-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 72 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1999-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 73 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  1999-03-27
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 73 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2000-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 74 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2000-04-01
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 74 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following procedures were conducted:
+  - medication reconciliation (procedure)
+  The following reports were created:
+  - lipid panel
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2001-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 75 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2001-04-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 75 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2002-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 76 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2006-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 80 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2006-05-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 80 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following reports were created:
+  - lipid panel
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+
+
+- History and physical note (Ref: LOINC: 34117-2, LOINC: 51847-2):
+  2007-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 81 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+
+
+DOCUMENT REFERENCES:
+- History and physical note:
+  2008-03-29
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; atorvastatin 80 mg oral tablet; clopidogrel 75 mg oral tablet; captopril 25 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - u.s. standard certificate of death - 2003 revision
+
+- History and physical note:
+  2008-03-22
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  Patient is presenting with myocardial infarction, history of myocardial infarction (situation).
+  ## Plan
+  The following procedures were conducted:
+  - echocardiography (procedure)
+  - percutaneous coronary intervention
+  - coronary artery bypass grafting
+  The patient was prescribed the following medications:
+  - atorvastatin 80 mg oral tablet
+  - captopril 25 mg oral tablet
+
+- History and physical note:
+  2008-03-03
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2007-05-12
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 81 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free, td (adult) preservative free.
+  The following procedures were conducted:
+  - medication reconciliation (procedure)
+  The following reports were created:
+  - complete blood count (hemogram) panel - blood by automated count
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+- History and physical note:
+  2007-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 81 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2006-05-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 80 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following reports were created:
+  - lipid panel
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+- History and physical note:
+  2006-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 80 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2005-04-30
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 79 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+- History and physical note:
+  2005-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 79 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2004-04-24
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 78 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+- History and physical note:
+  2004-03-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 78 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; clopidogrel 75 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2000-04-01
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 74 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following procedures were conducted:
+  - medication reconciliation (procedure)
+  The following reports were created:
+  - lipid panel
+
+- History and physical note:
+  2003-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 77 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2002-04-13
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 76 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following reports were created:
+  - complete blood count (hemogram) panel - blood by automated count
+
+- History and physical note:
+  2002-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 76 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2001-04-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 75 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+
+- History and physical note:
+  2001-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 75 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  2003-04-19
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 77 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  Patient is presenting with coronary heart disease.
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+  The following reports were created:
+  - lipid panel
+  The patient was prescribed the following medications:
+  - clopidogrel 75 mg oral tablet
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - clopidogrel 75 mg oral tablet
+  - nitroglycerin 0.4 mg/actuat mucosal spray
+  - simvastatin 20 mg oral tablet
+  - amlodipine 5 mg oral tablet
+
+- History and physical note:
+  1992-02-15
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 66 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with hyperlipidemia.
+  ## Plan
+
+- History and physical note:
+  1993-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 67 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1993-12-11
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 68 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  Patient is presenting with stroke.
+  ## Plan
+
+- History and physical note:
+  1926-06-19
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 7 month-old non-hispanic white male.
+  # Social History
+  Patient has never smoked and is an alcoholic.
+  Patient comes from a high socioeconomic background.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  ## Plan
+  The patient was placed on a careplan:
+  - self-care interventions (procedure)
+
+- History and physical note:
+  1955-10-04
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 29 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with chronic paralysis due to lesion of spinal cord.
+  ## Plan
+
+- History and physical note:
+  1965-11-20
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 40 year-old non-hispanic white male. Patient has a history of chronic paralysis due to lesion of spinal cord.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with body mass index 30+ - obesity (finding).
+  ## Plan
+
+- History and physical note:
+  1986-01-11
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 60 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Humana.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  Patient is presenting with osteoporosis (disorder).
+  ## Plan
+
+- History and physical note:
+  1992-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 66 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  No Active Medications.
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+  The patient was placed on a careplan:
+  - hyperlipidemia clinical management plan
+
+- History and physical note:
+  1994-01-15
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 68 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  Patient is presenting with numbness of face (finding), impaired cognition (finding), abnormal gait (finding), silent micro-hemorrhage of brain (disorder).
+  ## Plan
+  The following imaging studies were conducted:
+  - magnetic resonance imaging of head (procedure)  stored in ./output/dicom/Abe604_Frami345_b8dd1798-beef-094d-1be4-f90ee0e6b7d51.2.840.99999999.26401232.758647660200.dcm
+  The patient was prescribed the following medications:
+  - calcium carbonate 1250 mg / cholecalciferol 1000 unt / vitamin k 0.4 mg chewable tablet
+
+- History and physical note:
+  1994-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 68 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1995-03-07
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 69 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1996-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 70 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1997-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 71 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1998-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 72 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1999-03-06
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 73 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+- History and physical note:
+  1999-03-27
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 73 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  Patient was given the following immunizations: influenza, seasonal, injectable, preservative free.
+
+- History and physical note:
+  2000-03-05
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 74 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - comprehensive metabolic 2000 panel - serum or plasma
+  - lipid panel
+  The patient was prescribed the following medications:
+  - simvastatin 10 mg oral tablet
+
+OBSERVATIONS:
+- Potassium (Final) [2005-03-04]
+  Result: 4.94 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2005-03-04]
+  Result: 106.22 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2005-03-04]
+  Result: 20.87 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2005-03-04]
+  Result: 70.775 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2005-03-04]
+  Result: 79.309 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2005-03-04]
+  Result: 5.4868 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2005-03-04]
+  Result: 3.4927 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2005-03-04]
+  Result: 0.15167 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2005-03-04]
+  Result: 65.246 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2005-03-04]
+  Result: 41.472 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2005-03-04]
+  Result: 19.574 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2005-03-04]
+  Result: 167.77 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2005-03-04]
+  Result: 158.34 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2005-03-04]
+  Result: 141.53 mg/dL
+  Ref: LOINC: 18262-6
+- Blood Pressure (Final) [2005-04-30]
+  Result: Diastolic Blood Pressure: 84 mm[Hg], Systolic Blood Pressure: 165 mm[Hg]
+  Ref: LOINC: 85354-9
+- Body Height (Final) [2005-04-30]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2005-04-30]
+  Result: 0 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2005-04-30]
+  Result: 88.3 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2005-04-30]
+  Result: 29.68 kg/m2
+  Ref: LOINC: 39156-5
+- Protein [Mass/volume] in Serum or Plasma (Final) [2006-03-04]
+  Result: 60.335 g/dL
+  Ref: LOINC: 2885-2
+- Carbon Dioxide (Final) [2006-03-04]
+  Result: 22.15 mmol/L
+  Ref: LOINC: 20565-8
+- Glucose (Final) [1999-03-06]
+  Result: 71.54 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [1999-03-06]
+  Result: 8.7 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [1999-03-06]
+  Result: 2.5007 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [1999-03-06]
+  Result: 9.46 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [1999-03-06]
+  Result: 139.46 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [1999-03-06]
+  Result: 4.55 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [1999-03-06]
+  Result: 108.59 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [1999-03-06]
+  Result: 24.55 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [1999-03-06]
+  Result: 75.639 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [1999-03-06]
+  Result: 76.981 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [1999-03-06]
+  Result: 4.3171 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [1999-03-06]
+  Result: 2.3929 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [1999-03-06]
+  Result: 0.15852 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [1999-03-06]
+  Result: 130.42 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [1999-03-06]
+  Result: 55.667 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [1999-03-06]
+  Result: 11.333 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [1999-03-06]
+  Result: 173.87 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [1999-03-06]
+  Result: 101.19 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [1999-03-06]
+  Result: 135.17 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [1999-03-06]
+  Result: 74.437 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [1999-03-27]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [1999-03-27]
+  Result: 4 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [1999-03-27]
+  Result: 86.9 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [1999-03-27]
+  Result: 29.21 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [1999-03-27]
+  Result: Diastolic Blood Pressure: 86 mm[Hg], Systolic Blood Pressure: 167 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [1999-03-27]
+  Result: 62 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [1999-03-27]
+  Result: 16 /min
+  Ref: LOINC: 9279-1
+- Tobacco smoking status NHIS (Final) [1999-03-27]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2000-03-05]
+  Result: 82.06 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2000-03-05]
+  Result: 11.12 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2000-03-05]
+  Result: 2.7676 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2000-03-05]
+  Result: 10.04 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2000-03-05]
+  Result: 141.13 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2000-03-05]
+  Result: 5.06 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2000-03-05]
+  Result: 108.64 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2000-03-05]
+  Result: 20.55 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2000-03-05]
+  Result: 67.328 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2000-03-05]
+  Result: 66.464 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2000-03-05]
+  Result: 4.6698 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2000-03-05]
+  Result: 3.1031 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2000-03-05]
+  Result: 0.70291 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2000-03-05]
+  Result: 52.576 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2000-03-05]
+  Result: 58.904 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2000-03-05]
+  Result: 6.7823 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2000-03-05]
+  Result: 197.4 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2000-03-05]
+  Result: 115.79 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2000-03-05]
+  Result: 123.32 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2000-03-05]
+  Result: 30.48 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2000-04-01]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2000-04-01]
+  Result: 3 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2000-04-01]
+  Result: 88.6 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2000-04-01]
+  Result: 29.76 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2000-04-01]
+  Result: Diastolic Blood Pressure: 85 mm[Hg], Systolic Blood Pressure: 166 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2000-04-01]
+  Result: 94 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2000-04-01]
+  Result: 15 /min
+  Ref: LOINC: 9279-1
+- Total Cholesterol (Final) [2000-04-01]
+  Result: 168.98 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2000-04-01]
+  Result: 135.91 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2000-04-01]
+  Result: 64.14 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2000-04-01]
+  Result: 77.66 mg/dL
+  Ref: LOINC: 2085-9
+- Tobacco smoking status NHIS (Final) [2000-04-01]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2001-03-05]
+  Result: 93.27 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2001-03-05]
+  Result: 19.76 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2001-03-05]
+  Result: 3.4834 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2001-03-05]
+  Result: 8.56 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2001-03-05]
+  Result: 141.41 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2001-03-05]
+  Result: 4.92 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2001-03-05]
+  Result: 106.4 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2001-03-05]
+  Result: 20.61 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2001-03-05]
+  Result: 68.965 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2001-03-05]
+  Result: 68.588 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2001-03-05]
+  Result: 4.8512 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2001-03-05]
+  Result: 2.0744 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2001-03-05]
+  Result: 0.78455 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2001-03-05]
+  Result: 89.1 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2001-03-05]
+  Result: 35.846 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2001-03-05]
+  Result: 13.41 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2001-03-05]
+  Result: 159.5 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2001-03-05]
+  Result: 151.27 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2001-03-05]
+  Result: 113.85 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2001-03-05]
+  Result: 62.473 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2001-04-07]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2001-04-07]
+  Result: 3 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2001-04-07]
+  Result: 89.2 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2001-04-07]
+  Result: 29.99 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2001-04-07]
+  Result: Diastolic Blood Pressure: 83 mm[Hg], Systolic Blood Pressure: 167 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2001-04-07]
+  Result: 62 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2001-04-07]
+  Result: 14 /min
+  Ref: LOINC: 9279-1
+- Tobacco smoking status NHIS (Final) [2001-04-07]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2002-03-05]
+  Result: 97.45 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2002-03-05]
+  Result: 18.92 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2002-03-05]
+  Result: 3.4217 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2002-03-05]
+  Result: 9.11 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2002-03-05]
+  Result: 139.22 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2002-03-05]
+  Result: 5.05 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2002-03-05]
+  Result: 110.21 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2002-03-05]
+  Result: 24 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2002-03-05]
+  Result: 84.547 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2002-03-05]
+  Result: 69.389 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2002-03-05]
+  Result: 4.2869 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2002-03-05]
+  Result: 3.3636 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2002-03-05]
+  Result: 0.71811 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2002-03-05]
+  Result: 118.13 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2002-03-05]
+  Result: 23.837 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2002-03-05]
+  Result: 39.757 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2002-03-05]
+  Result: 163.74 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2002-03-05]
+  Result: 106.05 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2002-03-05]
+  Result: 112.69 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2002-03-05]
+  Result: 54.785 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2002-04-13]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2002-04-13]
+  Result: 1 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2002-04-13]
+  Result: 82.2 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2002-04-13]
+  Result: 27.64 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2002-04-13]
+  Result: Diastolic Blood Pressure: 88 mm[Hg], Systolic Blood Pressure: 162 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2002-04-13]
+  Result: 85 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2002-04-13]
+  Result: 14 /min
+  Ref: LOINC: 9279-1
+- Leukocytes [#/volume] in Blood by Automated count (Final) [2002-04-13]
+  Result: 6.1446 10*3/uL
+  Ref: LOINC: 6690-2
+- Erythrocytes [#/volume] in Blood by Automated count (Final) [2002-04-13]
+  Result: 4.2724 10*6/uL
+  Ref: LOINC: 789-8
+- Hemoglobin [Mass/volume] in Blood (Final) [2002-04-13]
+  Result: 16.044 g/dL
+  Ref: LOINC: 718-7
+- Hematocrit [Volume Fraction] of Blood by Automated count (Final) [2002-04-13]
+  Result: 39.609 %
+  Ref: LOINC: 4544-3
+- MCV [Entitic volume] by Automated count (Final) [2002-04-13]
+  Result: 89.335 fL
+  Ref: LOINC: 787-2
+- MCH [Entitic mass] by Automated count (Final) [2002-04-13]
+  Result: 27.36 pg
+  Ref: LOINC: 785-6
+- MCHC [Mass/volume] by Automated count (Final) [2002-04-13]
+  Result: 35.889 g/dL
+  Ref: LOINC: 786-4
+- Erythrocyte distribution width [Entitic volume] by Automated count (Final) [2002-04-13]
+  Result: 42.997 fL
+  Ref: LOINC: 21000-5
+- Platelets [#/volume] in Blood by Automated count (Final) [2002-04-13]
+  Result: 248.08 10*3/uL
+  Ref: LOINC: 777-3
+- Platelet distribution width [Entitic volume] in Blood by Automated count (Final) [2002-04-13]
+  Result: 184.59 fL
+  Ref: LOINC: 32207-3
+- Platelet mean volume [Entitic volume] in Blood by Automated count (Final) [2002-04-13]
+  Result: 9.6187 fL
+  Ref: LOINC: 32623-1
+- Tobacco smoking status NHIS (Final) [2002-04-13]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2003-03-05]
+  Result: 97.68 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2003-03-05]
+  Result: 10.57 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2003-03-05]
+  Result: 3.3947 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2003-03-05]
+  Result: 9.27 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2003-03-05]
+  Result: 142.45 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2003-03-05]
+  Result: 4.16 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2003-03-05]
+  Result: 103.87 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2003-03-05]
+  Result: 21.66 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2003-03-05]
+  Result: 76.664 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2003-03-05]
+  Result: 79.714 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2003-03-05]
+  Result: 5.4104 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2003-03-05]
+  Result: 2.2551 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2003-03-05]
+  Result: 0.8799 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2003-03-05]
+  Result: 71.856 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2003-03-05]
+  Result: 55.779 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2003-03-05]
+  Result: 15.501 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2003-03-05]
+  Result: 158.21 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2003-03-05]
+  Result: 190.22 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2003-03-05]
+  Result: 90.242 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2003-03-05]
+  Result: 76.894 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2003-04-19]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2003-04-19]
+  Result: 4 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2003-04-19]
+  Result: 84.3 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2003-04-19]
+  Result: 28.32 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2003-04-19]
+  Result: Diastolic Blood Pressure: 83 mm[Hg], Systolic Blood Pressure: 166 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2003-04-19]
+  Result: 88 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2003-04-19]
+  Result: 15 /min
+  Ref: LOINC: 9279-1
+- Total Cholesterol (Final) [2003-04-19]
+  Result: 168.06 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2003-04-19]
+  Result: 122.69 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2003-04-19]
+  Result: 83.47 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2003-04-19]
+  Result: 60.05 mg/dL
+  Ref: LOINC: 2085-9
+- Tobacco smoking status NHIS (Final) [2003-04-19]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2004-03-04]
+  Result: 77.43 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2004-03-04]
+  Result: 8.14 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2004-03-04]
+  Result: 3.1105 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2004-03-04]
+  Result: 9.49 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2004-03-04]
+  Result: 137.52 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2004-03-04]
+  Result: 4.46 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2004-03-04]
+  Result: 105.7 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2004-03-04]
+  Result: 23.07 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2004-03-04]
+  Result: 82.817 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2004-03-04]
+  Result: 77.86 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2004-03-04]
+  Result: 4.7941 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2004-03-04]
+  Result: 2.1528 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2004-03-04]
+  Result: 0.26942 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2004-03-04]
+  Result: 66.203 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2004-03-04]
+  Result: 50.45 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2004-03-04]
+  Result: 36.707 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2004-03-04]
+  Result: 155.78 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2004-03-04]
+  Result: 120.27 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2004-03-04]
+  Result: 108.48 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2004-03-04]
+  Result: 47.838 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2004-04-24]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2004-04-24]
+  Result: 0 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2004-04-24]
+  Result: 86.3 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2004-04-24]
+  Result: 29 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2004-04-24]
+  Result: Diastolic Blood Pressure: 88 mm[Hg], Systolic Blood Pressure: 163 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2004-04-24]
+  Result: 73 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2004-04-24]
+  Result: 13 /min
+  Ref: LOINC: 9279-1
+- Tobacco smoking status NHIS (Final) [2004-04-24]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2005-03-04]
+  Result: 65.65 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2005-03-04]
+  Result: 12.37 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2005-03-04]
+  Result: 2.6468 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2005-03-04]
+  Result: 8.72 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2005-03-04]
+  Result: 137.62 mmol/L
+  Ref: LOINC: 2947-0
+- High Density Lipoprotein Cholesterol (Final) [2005-03-04]
+  Result: 72.039 mg/dL
+  Ref: LOINC: 2085-9
+- Heart rate (Final) [2005-04-30]
+  Result: 71 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2005-04-30]
+  Result: 14 /min
+  Ref: LOINC: 9279-1
+- Tobacco smoking status NHIS (Final) [2005-04-30]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2006-03-04]
+  Result: 91.87 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2006-03-04]
+  Result: 16.3 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2006-03-04]
+  Result: 2.8428 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2006-03-04]
+  Result: 8.84 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2006-03-04]
+  Result: 142.24 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2006-03-04]
+  Result: 4.3 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2006-03-04]
+  Result: 104.79 mmol/L
+  Ref: LOINC: 2069-3
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2006-03-04]
+  Result: 89.714 mL/min
+  Ref: LOINC: 33914-3
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2006-03-04]
+  Result: 4.0639 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2006-03-04]
+  Result: 2.7338 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2006-03-04]
+  Result: 0.73817 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2006-03-04]
+  Result: 135.88 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2006-03-04]
+  Result: 39.622 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2006-03-04]
+  Result: 20.119 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2006-03-04]
+  Result: 170.09 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2006-03-04]
+  Result: 147.03 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2006-03-04]
+  Result: 81.794 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2006-03-04]
+  Result: 45.858 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2006-05-06]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2006-05-06]
+  Result: 0 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2006-05-06]
+  Result: 90 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2006-05-06]
+  Result: 30.25 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2006-05-06]
+  Result: Diastolic Blood Pressure: 84 mm[Hg], Systolic Blood Pressure: 165 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2006-05-06]
+  Result: 74 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2006-05-06]
+  Result: 14 /min
+  Ref: LOINC: 9279-1
+- Total Cholesterol (Final) [2006-05-06]
+  Result: 193.36 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2006-05-06]
+  Result: 133.42 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2006-05-06]
+  Result: 98.58 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2006-05-06]
+  Result: 68.09 mg/dL
+  Ref: LOINC: 2085-9
+- Tobacco smoking status NHIS (Final) [2006-05-06]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2007-03-04]
+  Result: 82.79 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2007-03-04]
+  Result: 12.27 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2007-03-04]
+  Result: 3.3861 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2007-03-04]
+  Result: 9.96 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2007-03-04]
+  Result: 140.81 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2007-03-04]
+  Result: 4.84 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2007-03-04]
+  Result: 106.2 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2007-03-04]
+  Result: 24.37 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2007-03-04]
+  Result: 82.249 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2007-03-04]
+  Result: 64.032 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2007-03-04]
+  Result: 3.6801 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2007-03-04]
+  Result: 2.1623 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2007-03-04]
+  Result: 0.99214 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2007-03-04]
+  Result: 51.578 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2007-03-04]
+  Result: 32.792 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2007-03-04]
+  Result: 34.327 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2007-03-04]
+  Result: 169.1 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2007-03-04]
+  Result: 181.77 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2007-03-04]
+  Result: 85.557 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2007-03-04]
+  Result: 50.155 mg/dL
+  Ref: LOINC: 2085-9
+- Body Height (Final) [2007-05-12]
+  Result: 172.5 cm
+  Ref: LOINC: 8302-2
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported (Final) [2007-05-12]
+  Result: 1 {score}
+  Ref: LOINC: 72514-3
+- Body Weight (Final) [2007-05-12]
+  Result: 90 kg
+  Ref: LOINC: 29463-7
+- Body Mass Index (Final) [2007-05-12]
+  Result: 30.25 kg/m2
+  Ref: LOINC: 39156-5
+- Blood Pressure (Final) [2007-05-12]
+  Result: Diastolic Blood Pressure: 85 mm[Hg], Systolic Blood Pressure: 165 mm[Hg]
+  Ref: LOINC: 85354-9
+- Heart rate (Final) [2007-05-12]
+  Result: 100 /min
+  Ref: LOINC: 8867-4
+- Respiratory rate (Final) [2007-05-12]
+  Result: 14 /min
+  Ref: LOINC: 9279-1
+- Leukocytes [#/volume] in Blood by Automated count (Final) [2007-05-12]
+  Result: 3.6061 10*3/uL
+  Ref: LOINC: 6690-2
+- Erythrocytes [#/volume] in Blood by Automated count (Final) [2007-05-12]
+  Result: 4.6424 10*6/uL
+  Ref: LOINC: 789-8
+- Hemoglobin [Mass/volume] in Blood (Final) [2007-05-12]
+  Result: 13.462 g/dL
+  Ref: LOINC: 718-7
+- Hematocrit [Volume Fraction] of Blood by Automated count (Final) [2007-05-12]
+  Result: 35.69 %
+  Ref: LOINC: 4544-3
+- MCV [Entitic volume] by Automated count (Final) [2007-05-12]
+  Result: 84.11 fL
+  Ref: LOINC: 787-2
+- MCH [Entitic mass] by Automated count (Final) [2007-05-12]
+  Result: 27.663 pg
+  Ref: LOINC: 785-6
+- MCHC [Mass/volume] by Automated count (Final) [2007-05-12]
+  Result: 35.17 g/dL
+  Ref: LOINC: 786-4
+- Erythrocyte distribution width [Entitic volume] by Automated count (Final) [2007-05-12]
+  Result: 39.256 fL
+  Ref: LOINC: 21000-5
+- Platelets [#/volume] in Blood by Automated count (Final) [2007-05-12]
+  Result: 353.74 10*3/uL
+  Ref: LOINC: 777-3
+- Platelet distribution width [Entitic volume] in Blood by Automated count (Final) [2007-05-12]
+  Result: 417.99 fL
+  Ref: LOINC: 32207-3
+- Platelet mean volume [Entitic volume] in Blood by Automated count (Final) [2007-05-12]
+  Result: 12.005 fL
+  Ref: LOINC: 32623-1
+- Tobacco smoking status NHIS (Final) [2007-05-12]
+  Result: Never smoker
+  Ref: LOINC: 72166-2
+- Glucose (Final) [2008-03-03]
+  Result: 76.77 mg/dL
+  Ref: LOINC: 2339-0
+- Urea Nitrogen (Final) [2008-03-03]
+  Result: 11.36 mg/dL
+  Ref: LOINC: 6299-2
+- Creatinine (Final) [2008-03-03]
+  Result: 3.1018 mg/dL
+  Ref: LOINC: 38483-4
+- Calcium (Final) [2008-03-03]
+  Result: 10.01 mg/dL
+  Ref: LOINC: 49765-1
+- Sodium (Final) [2008-03-03]
+  Result: 143.21 mmol/L
+  Ref: LOINC: 2947-0
+- Potassium (Final) [2008-03-03]
+  Result: 4.32 mmol/L
+  Ref: LOINC: 6298-4
+- Chloride (Final) [2008-03-03]
+  Result: 103.27 mmol/L
+  Ref: LOINC: 2069-3
+- Carbon Dioxide (Final) [2008-03-03]
+  Result: 21.04 mmol/L
+  Ref: LOINC: 20565-8
+- Glomerular filtration rate/1.73 sq M.predicted (Final) [2008-03-03]
+  Result: 88.743 mL/min
+  Ref: LOINC: 33914-3
+- Protein [Mass/volume] in Serum or Plasma (Final) [2008-03-03]
+  Result: 76.849 g/dL
+  Ref: LOINC: 2885-2
+- Albumin [Mass/volume] in Serum or Plasma (Final) [2008-03-03]
+  Result: 4.8232 g/dL
+  Ref: LOINC: 1751-7
+- Globulin [Mass/volume] in Serum by calculation (Final) [2008-03-03]
+  Result: 2.8399 g/L
+  Ref: LOINC: 10834-0
+- Bilirubin.total [Mass/volume] in Serum or Plasma (Final) [2008-03-03]
+  Result: 0.21251 mg/dL
+  Ref: LOINC: 1975-2
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma (Final) [2008-03-03]
+  Result: 139.73 U/L
+  Ref: LOINC: 6768-6
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2008-03-03]
+  Result: 38.517 U/L
+  Ref: LOINC: 1742-6
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma (Final) [2008-03-03]
+  Result: 22.407 U/L
+  Ref: LOINC: 1920-8
+- Total Cholesterol (Final) [2008-03-03]
+  Result: 172.74 mg/dL
+  Ref: LOINC: 2093-3
+- Triglycerides (Final) [2008-03-03]
+  Result: 143.98 mg/dL
+  Ref: LOINC: 2571-8
+- Low Density Lipoprotein Cholesterol (Final) [2008-03-03]
+  Result: 97.498 mg/dL
+  Ref: LOINC: 18262-6
+- High Density Lipoprotein Cholesterol (Final) [2008-03-03]
+  Result: 48.565 mg/dL
+  Ref: LOINC: 2085-9
+- Cause of Death [US Standard Certificate of Death] (Final) [2008-03-29]
+  Result: Myocardial Infarction
+  Ref: LOINC: 69453-9
+IMMUNIZATIONS:
+- Influenza, seasonal, injectable, preservative free (Completed) [1999-03-27]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2000-04-01]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2001-04-07]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2002-04-13]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2003-04-19]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2004-04-24]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2005-04-30]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2006-05-06]
+  Ref: CVX: 140
+- Influenza, seasonal, injectable, preservative free (Completed) [2007-05-12]
+  Ref: CVX: 140
+- Td (adult) preservative free (Completed) [2007-05-12]
+  Ref: CVX: 113
+MEDICATION REQUESTS:
+- Clopidogrel 75 MG Oral Tablet (RxNorm: 309362) (Stopped, [2004-04-24])
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129) (Stopped, [2004-04-24])
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961) (Stopped, [2004-04-24])
+- Amlodipine 5 MG Oral Tablet (RxNorm: 197361) (Stopped, [2004-04-24])
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2005-03-04])
+  Dosage: 1, Once a day
+- Clopidogrel 75 MG Oral Tablet (RxNorm: 309362) (Stopped, [2005-04-30])
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129) (Stopped, [2005-04-30])
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961) (Stopped, [2005-04-30])
+- Amlodipine 5 MG Oral Tablet (RxNorm: 197361) (Stopped, [2005-04-30])
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2006-03-04])
+  Dosage: 1, Once a day
+- Clopidogrel 75 MG Oral Tablet (RxNorm: 309362) (Stopped, [2006-05-06])
+- Captopril 25 MG Oral Tablet (RxNorm: 833036) (Stopped, [2008-03-22])
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129) (Stopped, [2007-05-12])
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129) (Stopped, [2006-05-06])
+- Amlodipine 5 MG Oral Tablet (RxNorm: 197361) (Active, [2007-05-12])
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961) (Active, [2007-05-12])
+- Atorvastatin 80 MG Oral Tablet (RxNorm: 259255) (Stopped, [2008-03-22])
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Active, [2008-03-03])
+  Dosage: 1, Once a day
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961) (Stopped, [2006-05-06])
+- Amlodipine 5 MG Oral Tablet (RxNorm: 197361) (Stopped, [2006-05-06])
+- Clopidogrel 75 MG Oral Tablet (RxNorm: 309362) (Stopped, [2007-05-12])
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1992-03-07])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1993-03-07])
+  Dosage: 1, Once a day
+- Calcium Carbonate 1250 MG / Cholecalciferol 1000 UNT / Vitamin K 0.4 MG Chewable Tablet (RxNorm: 1362805) (Active, [1994-01-15])
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1994-03-07])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1995-03-07])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1996-03-06])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1997-03-06])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1998-03-06])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [1999-03-06])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2000-03-05])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2001-03-05])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2002-03-05])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2003-03-05])
+  Dosage: 1, Once a day
+- Clopidogrel 75 MG Oral Tablet (RxNorm: 309362) (Stopped, [2003-04-19])
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961) (Stopped, [2003-04-19])
+- Amlodipine 5 MG Oral Tablet (RxNorm: 197361) (Stopped, [2003-04-19])
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129) (Stopped, [2003-04-19])
+- Clopidogrel 75 MG Oral Tablet (RxNorm: 309362) (Stopped, [2003-04-19])
+- Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray (RxNorm: 705129) (Stopped, [2003-04-19])
+- Simvastatin 20 MG Oral Tablet (RxNorm: 312961) (Stopped, [2003-04-19])
+- Amlodipine 5 MG Oral Tablet (RxNorm: 197361) (Stopped, [2003-04-19])
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2004-03-04])
+  Dosage: 1, Once a day
+- Simvastatin 10 MG Oral Tablet (RxNorm: 314231) (Stopped, [2007-03-04])
+  Dosage: 1, Once a day
