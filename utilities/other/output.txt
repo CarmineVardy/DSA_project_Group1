@@ -1,0 +1,118 @@
+(Current Date: 2008-03-29)
+### PATIENT PROFILE
+- Demographics: male, 82 years old
+
+### ACTIVE DEVICES
+- Coronary artery stent (physical object) [SNOMED: 705643001]
+
+### ALLERGIES & INTOLERANCES
+- No known allergies
+
+### ACTIVE CARE PLANS & GOALS
+**Self-care interventions (procedure)** (Start: 1926-06-19)
+- Food allergy diet (in-progress) [SNOMED: 409002]
+- Allergy education (in-progress) [SNOMED: 58332002]
+**Hyperlipidemia clinical management plan** (Start: 1992-03-07)
+- low salt diet education (in-progress) [SNOMED: 183063000]
+- physical exercise (in-progress) [SNOMED: 183301007]
+
+### ACTIVE CONDITIONS (PROBLEM LIST)
+- Chronic paralysis due to lesion of spinal cord [Onset: 1955-10-04] [SNOMED: 698754002]
+- Body mass index 30+ - obesity (finding) [Onset: 1965-11-20] [SNOMED: 162864005]
+- Osteoporosis (disorder) [Onset: 1986-01-11] [SNOMED: 64859006]
+- Hyperlipidemia [Onset: 1992-02-15] [SNOMED: 55822004]
+- Stroke [Onset: 1993-12-11] [SNOMED: 230690007]
+- Numbness of face (finding) [Onset: 1994-01-15] [SNOMED: 309557009]
+- Impaired cognition (finding) [Onset: 1994-01-15] [SNOMED: 386806002]
+- Abnormal gait (finding) [Onset: 1994-01-15] [SNOMED: 22325002]
+- Silent micro-hemorrhage of brain (disorder) [Onset: 1994-01-15] [SNOMED: 723857007]
+- Coronary Heart Disease [Onset: 2003-04-19] [SNOMED: 53741008]
+- Myocardial Infarction [Onset: 2008-03-22] [SNOMED: 22298006]
+- History of myocardial infarction (situation) [Onset: 2008-03-22] [SNOMED: 399211009]
+
+### PROCEDURES HISTORY
+- Medication Reconciliation (procedure) (Dates: 2000-04-01, 2007-05-12) [SNOMED: 430193006]
+- Echocardiography (procedure) [Date: 2008-03-22] [SNOMED: 40701008]
+- Percutaneous coronary intervention [Date: 2008-03-22] [SNOMED: 415070008]
+- Coronary artery bypass grafting [Date: 2008-03-22] [SNOMED: 232717009]
+
+### IMMUNIZATION HISTORY
+- Influenza, seasonal, injectable, preservative free (9 doses, Latest: 2007-05-12) [CVX: 140]
+- Td (adult) preservative free (Dates: 2007-05-12) [CVX: 113]
+
+### CURRENT MEDICATIONS (ACTIVE)
+- Simvastatin 10 MG Oral Tablet [RxNorm: 314231] (Start: 2008-03-03)
+  Sig: 1, Once a day
+- Amlodipine 5 MG Oral Tablet [RxNorm: 197361] (Start: 2007-05-12)
+- Simvastatin 20 MG Oral Tablet [RxNorm: 312961] (Start: 2007-05-12)
+- Calcium Carbonate 1250 MG / Cholecalciferol 1000 UNT / Vitamin K 0.4 MG Chewable Tablet [RxNorm: 1362805] (Start: 1994-01-15)
+
+### LATEST VITAL SIGNS
+- Blood Pressure: [Diastolic Blood Pressure: 85 mm[Hg], Systolic Blood Pressure: 165 mm[Hg]] (2007-05-12) [LOINC: 85354-9]
+- Body Height: 172.5 cm (2007-05-12) [LOINC: 8302-2]
+- Body Mass Index: 30.25 kg/m2 (2007-05-12) [LOINC: 39156-5]
+- Body Weight: 90 kg (2007-05-12) [LOINC: 29463-7]
+- Heart rate: 100 /min (2007-05-12) [LOINC: 8867-4]
+- Pain severity - 0-10 verbal numeric rating [Score] - Reported: 1 {score} (2007-05-12) [LOINC: 72514-3]
+- Respiratory rate: 14 /min (2007-05-12) [LOINC: 9279-1]
+
+### LATEST LABORATORY RESULTS
+- Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma: 38.517 U/L (2008-03-03) [LOINC: 1742-6]
+- Albumin [Mass/volume] in Serum or Plasma: 4.8232 g/dL (2008-03-03) [LOINC: 1751-7]
+- Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma: 139.73 U/L (2008-03-03) [LOINC: 6768-6]
+- Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma: 22.407 U/L (2008-03-03) [LOINC: 1920-8]
+- Bilirubin.total [Mass/volume] in Serum or Plasma: 0.21251 mg/dL (2008-03-03) [LOINC: 1975-2]
+- Calcium: 10.01 mg/dL (2008-03-03) [LOINC: 49765-1]
+- Carbon Dioxide: 21.04 mmol/L (2008-03-03) [LOINC: 20565-8]
+- Chloride: 103.27 mmol/L (2008-03-03) [LOINC: 2069-3]
+- Creatinine: 3.1018 mg/dL (2008-03-03) [LOINC: 38483-4]
+- Erythrocyte distribution width [Entitic volume] by Automated count: 39.256 fL (2007-05-12) [LOINC: 21000-5]
+- Erythrocytes [#/volume] in Blood by Automated count: 4.6424 10*6/uL (2007-05-12) [LOINC: 789-8]
+- Globulin [Mass/volume] in Serum by calculation: 2.8399 g/L (2008-03-03) [LOINC: 10834-0]
+- Glomerular filtration rate/1.73 sq M.predicted: 88.743 mL/min (2008-03-03) [LOINC: 33914-3]
+- Glucose: 76.77 mg/dL (2008-03-03) [LOINC: 2339-0]
+- Hematocrit [Volume Fraction] of Blood by Automated count: 35.69 % (2007-05-12) [LOINC: 4544-3]
+- Hemoglobin [Mass/volume] in Blood: 13.462 g/dL (2007-05-12) [LOINC: 718-7]
+- High Density Lipoprotein Cholesterol: 48.565 mg/dL (2008-03-03) [LOINC: 2085-9]
+- Leukocytes [#/volume] in Blood by Automated count: 3.6061 10*3/uL (2007-05-12) [LOINC: 6690-2]
+- Low Density Lipoprotein Cholesterol: 97.498 mg/dL (2008-03-03) [LOINC: 18262-6]
+- MCH [Entitic mass] by Automated count: 27.663 pg (2007-05-12) [LOINC: 785-6]
+- MCHC [Mass/volume] by Automated count: 35.17 g/dL (2007-05-12) [LOINC: 786-4]
+- MCV [Entitic volume] by Automated count: 84.11 fL (2007-05-12) [LOINC: 787-2]
+- Platelet distribution width [Entitic volume] in Blood by Automated count: 417.99 fL (2007-05-12) [LOINC: 32207-3]
+- Platelet mean volume [Entitic volume] in Blood by Automated count: 12.005 fL (2007-05-12) [LOINC: 32623-1]
+- Platelets [#/volume] in Blood by Automated count: 353.74 10*3/uL (2007-05-12) [LOINC: 777-3]
+- Potassium: 4.32 mmol/L (2008-03-03) [LOINC: 6298-4]
+- Protein [Mass/volume] in Serum or Plasma: 76.849 g/dL (2008-03-03) [LOINC: 2885-2]
+- Sodium: 143.21 mmol/L (2008-03-03) [LOINC: 2947-0]
+- Total Cholesterol: 172.74 mg/dL (2008-03-03) [LOINC: 2093-3]
+- Triglycerides: 143.98 mg/dL (2008-03-03) [LOINC: 2571-8]
+- Urea Nitrogen: 11.36 mg/dL (2008-03-03) [LOINC: 6299-2]
+
+### OTHER CLINICAL FINDINGS (Surveys, Imaging, Exams)
+- Cause of Death [US Standard Certificate of Death]: Myocardial Infarction (2008-03-29) [LOINC: 69453-9]
+- Tobacco smoking status NHIS: Never smoker (2007-05-12) [LOINC: 72166-2]
+
+### LATEST CLINICAL NOTE
+**History and physical note**:
+  2008-03-29
+  # Chief Complaint
+  No complaints.
+  # History of Present Illness
+  Abe604
+  is a 82 year-old non-hispanic white male.
+  # Social History
+  Patient is married. Patient is an active smoker and is an alcoholic.
+  Patient identifies as heterosexual.
+  Patient comes from a high socioeconomic background.
+  Patient has completed some college courses.
+  Patient currently has Medicare.
+  # Allergies
+  No Known Allergies.
+  # Medications
+  simvastatin 10 mg oral tablet; amlodipine 5 mg oral tablet; simvastatin 20 mg oral tablet; atorvastatin 80 mg oral tablet; clopidogrel 75 mg oral tablet; captopril 25 mg oral tablet; nitroglycerin 0.4 mg/actuat mucosal spray
+  # Assessment and Plan
+  ## Plan
+  The following reports were created:
+  - u.s. standard certificate of death - 2003 revision
+

@@ -1,3 +1,14 @@
+'''
+Script: immunization.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR Immunization resource. It handles vaccination status,
+vaccine codes, and administration dates, providing standardized output for the
+patient's immunization history.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.immunization import Immunization as FhirImmunization
 from enum import Enum
 from typing import Optional, List, Dict
@@ -53,36 +64,25 @@ class AppImmunization:
     def occurrence_date(self) -> Optional[datetime]:
         return self.resource.occurrenceDateTime
 
-    # 4. PROMPT GENERATION
+    @property
+    def simple_code_str(self) -> str:
+        """
+        Helper property to facilitate grouping by generating a standard code string.
+        """
+        if self.code_details:
+            code_parts = []
+            for c in self.code_details:
+                # Direct syntax formatting
+                code_parts.append(f"[{c['system']}: {c['code']}]")
+            return " " + " ".join(code_parts)
+        return ""
+
     def to_prompt_string(self) -> str:
-        header_name = self.code_text
+        # Fallback method (used if grouping is not applied)
+        header_name = self.code_text or "Unknown Vaccine"
         
-        # Se non c'è nome né codici, la risorsa è inutile
-        if not header_name and not self.code_details:
-            return ""
-
-        meta_parts = []
-        if self.status:
-            meta_parts.append(self.status.value.capitalize())
-
-        meta_str = f" ({', '.join(meta_parts)})" if meta_parts else ""
-
         date_str = ""
         if self.occurrence_date:
-            date_str = f" [{self.occurrence_date.strftime('%Y-%m-%d')}]"
-        
-        header_line = f"- {header_name or 'Unknown Vaccine'}{meta_str}{date_str}"
-
-        ref_line = ""
-        codes = self.code_details
-        if codes:
-            code_strs = []
-            for c in codes:
-                item = f"{c['system']}: {c['code']}"
-                #if c.get('display'):
-                #    item += f" ({c['display']})"
-                code_strs.append(item)
+            date_str = f" [Date: {self.occurrence_date.strftime('%Y-%m-%d')}]"
             
-            ref_line = f"\n  Ref: {', '.join(code_strs)}"
-
-        return f"{header_line}{ref_line}"
+        return f"- {header_name}{date_str}{self.simple_code_str}"

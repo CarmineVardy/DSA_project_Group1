@@ -1,3 +1,14 @@
+'''
+Script: procedure.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR Procedure resource. It manages procedure status,
+categories, codes, and performance dates. It also provides helper properties for
+grouping procedures in the patient summary.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.procedure import Procedure as FhirProcedure
 
 from enum import Enum
@@ -84,38 +95,25 @@ class AppProcedure:
             return self.resource.performedPeriod.end
         return None
 
+    @property
+    def simple_code_str(self) -> str:
+        """
+        Helper property to generate a standardized code string for grouping purposes.
+        """
+        if self.code_details:
+            code_parts = []
+            for c in self.code_details:
+                # Direct syntax formatting
+                code_parts.append(f"[{c['system']}: {c['code']}]")
+            return " " + " ".join(code_parts)
+        return ""
+
     def to_prompt_string(self) -> str:
-        header_name = self.code_text
-        
-        if not header_name and not self.code_details:
-            return ""
-
-        meta_parts = []
-        
-        if self.status:
-            meta_parts.append(self.status.value.capitalize())
-            
-        if self.category_text:
-            meta_parts.append(self.category_text)
-
-        meta_str = f" ({', '.join(meta_parts)})" if meta_parts else ""
+        # Fallback method (used for single instance printing)
+        name = self.code_text or "Unknown Procedure"
 
         date_str = ""
         if self.start_date:
-            date_str = f" [{self.start_date.strftime('%Y-%m-%d')}]"
-        
-        header_line = f"- {header_name or ''}{meta_str}{date_str}"
-
-        ref_line = ""
-        codes = self.code_details
-        if codes:
-            code_strs = []
-            for c in codes:
-                item = f"{c['system']}: {c['code']}"
-                #if c.get('display'):
-                #    item += f" ({c['display']})"
-                code_strs.append(item)
+            date_str = f" [Date: {self.start_date.strftime('%Y-%m-%d')}]"
             
-            ref_line = f"\n  Ref: {', '.join(code_strs)}"
-
-        return f"{header_line}{ref_line}"
+        return f"- {name}{date_str}{self.simple_code_str}"

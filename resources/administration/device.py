@@ -1,3 +1,13 @@
+'''
+Script: device.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR Device resource. It handles extraction of device status,
+types, and names, providing a formatted string representation for LLM grounding.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.device import Device as FhirDevice
 
 from enum import Enum
@@ -61,32 +71,25 @@ class AppDevice:
         return AppCodeableConcept(self.resource.type).coding_details
 
     def to_prompt_string(self) -> str:
+        # Retrieve the best available name
         standard_name = self.type_text      
         friendly_name = self.device_names 
 
+        # Name display logic
         if standard_name and friendly_name and standard_name.lower() != friendly_name.lower():
-            header_name = f"{standard_name} ({friendly_name})"
+            display_name = f"{standard_name} ({friendly_name})"
         else:
-            header_name = standard_name or friendly_name or ""
+            display_name = standard_name or friendly_name or "Unknown Device"
 
-        if header_name == "" and not self.type_details:
-            return ""
-
-        status_part = ""
-        if self.status:
-            status_part = f"({self.status.value.capitalize()})"
-
-        parts = [p for p in [header_name, status_part] if p]
-        header_line = f"- {' '.join(parts)}"
-
-        ref_line = ""
-        codes = self.type_details
-        if codes:
-            code_strs = []
-            for c in codes:
-                item = f"{c['system']}: {c['code']}"
-                code_strs.append(item)
+        # Code management (Clean syntax)
+        code_str = ""
+        if self.type_details:
+            code_parts = []
+            for c in self.type_details:
+                # Direct syntax formatting
+                code_parts.append(f"[{c['system']}: {c['code']}]")
             
-            ref_line = f"\n  Ref: {', '.join(code_strs)}"
-
-        return header_line + ref_line
+            if code_parts:
+                code_str = " " + " ".join(code_parts)
+        
+        return f"- {display_name}{code_str}"

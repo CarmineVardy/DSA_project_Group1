@@ -9,7 +9,7 @@ from fhirpy import SyncFHIRClient
 from dotenv import load_dotenv
 from datetime import datetime
 
-# --- 1. CONFIGURAZIONE ---
+# --- 1. CONFIGURATION ---
 load_dotenv()
 SERVER_URL = os.getenv("SERVER_URL")
 HF_TOKEN = os.getenv("HF_TOKEN")
@@ -17,7 +17,7 @@ HISTORY_FILE = "chat_history.json"
 
 st.set_page_config(page_title="FHIR Chatbot - BioLlama", layout="wide")
 
-# --- 2. GESTIONE JSON ---
+# --- 2. JSON MANAGEMENT ---
 def load_json_history():
     if not os.path.exists(HISTORY_FILE): return {}
     try:
@@ -30,7 +30,7 @@ def save_json_history(history_dict):
 if "history_per_patient" not in st.session_state:
     st.session_state.history_per_patient = load_json_history()
 
-# --- 3. FUNZIONE CDA (SOLO SALVATAGGIO) ---
+# --- 3. CDA FUNCTION (SAVE ONLY) ---
 def save_cda_to_fhir(patient_id, title, content):
     try:
         timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
@@ -56,11 +56,11 @@ def save_cda_to_fhir(patient_id, title, content):
         client.resource('DocumentReference', **doc_ref).save()
         return True
     except Exception as e:
-        st.error(f"Errore caricamento CDA: {e}")
+        st.error(f"Error uploading CDA: {e}")
         return False
 
-# --- 4. CARICAMENTO MODELLO ---
-@st.cache_resource(show_spinner="Inizializzazione Dr. Llama...")
+# --- 4. MODEL LOADING ---
+@st.cache_resource(show_spinner="Initializing Dr. Llama...")
 def load_llm():
     if not HF_TOKEN: return None
     huggingface_hub.login(HF_TOKEN)
@@ -74,32 +74,32 @@ def load_llm():
 llm = load_llm()
 client = SyncFHIRClient(SERVER_URL)
 
-# --- 5. SIDEBAR (PULITA) ---
+# --- 5. SIDEBAR (CLEAN) ---
 with st.sidebar:
-    st.title("🏥 Informazioni Paziente")
+    st.title("🏥 Patient Information")
     try:
         from resources.administration.patient import AppPatient
-        # Carichiamo i pazienti per la selezione
+        # Load patients for selection
         resources = client.resources('Patient').limit(20).fetch()
         p_dict = {AppPatient(r.serialize()).get_full_name(): r.serialize() for r in resources}
         
-        scelta = st.selectbox("Seleziona Paziente:", options=list(p_dict.keys()))
-        patient_data = p_dict[scelta]
+        choice = st.selectbox("Select Patient:", options=list(p_dict.keys()))
+        patient_data = p_dict[choice]
         pid = patient_data.get('id')
         
-        # MOSTRA SOLO INFO BASE
+        # SHOW ONLY BASIC INFO
         st.divider()
-        st.write(f"**ID FHIR:** `{pid}`")
-        st.write(f"**Paziente:** {scelta}")
+        st.write(f"**FHIR ID:** `{pid}`")
+        st.write(f"**Patient:** {choice}")
         st.divider()
         
-        if st.button("🗑️ Reset Chat Locale"):
+        if st.button("🗑️ Reset Local Chat"):
             st.session_state.history_per_patient[pid] = []
             save_json_history(st.session_state.history_per_patient)
             st.rerun()
             
     except Exception as e:
-        st.error(f"Errore connessione FHIR: {e}")
+        st.error(f"FHIR connection error: {e}")
 
 # --- 6. CHAT ---
 st.title("💬 Dr. Llama - Medical Assistant")
@@ -114,23 +114,23 @@ if 'pid' in locals() and llm:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
             if msg["role"] == "assistant":
-                with st.expander("💾 Salva come Documento CDA"):
-                    title_input = st.text_input("Titolo documento:", key=f"t_{i}")
-                    if st.button("Carica su Server", key=f"cda_{i}"):
+                with st.expander("💾 Save as CDA Document"):
+                    title_input = st.text_input("Document Title:", key=f"t_{i}")
+                    if st.button("Upload to Server", key=f"cda_{i}"):
                         if title_input:
                             if save_cda_to_fhir(pid, title_input, msg["content"]):
-                                st.success("Documento CDA creato correttamente sul server!")
+                                st.success("CDA document successfully created on server!")
                         else:
-                            st.warning("Inserisci un titolo.")
+                            st.warning("Please enter a title.")
 
-    if prompt := st.chat_input("Fai una domanda clinica..."):
+    if prompt := st.chat_input("Ask a clinical question..."):
         history.append({"role": "user", "content": prompt})
         with st.chat_message("user"): st.markdown(prompt)
 
         with st.chat_message("assistant"):
-            with st.spinner("Analisi in corso..."):
-                sys_msg = f"You are a medical assistant for patient {scelta} (ID: {pid})."
-                # Usiamo solo gli ultimi 3 messaggi per stabilità
+            with st.spinner("Analyzing..."):
+                sys_msg = f"You are a medical assistant for patient {choice} (ID: {pid})."
+                # We use only the last 3 messages for stability
                 clean_history = [m for m in history[-3:] if "not a doctor" not in m["content"]]
                 messages = [{"role": "system", "content": sys_msg}] + clean_history
                 
@@ -144,4 +144,4 @@ if 'pid' in locals() and llm:
                 save_json_history(st.session_state.history_per_patient)
                 st.rerun()
 else:
-    st.info("👈 Seleziona un paziente per iniziare.")
+    st.info("👈 Select a patient to start.")

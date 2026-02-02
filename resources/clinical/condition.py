@@ -1,3 +1,13 @@
+'''
+Script: condition.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR Condition resource. It handles clinical status, verification status,
+and categories, formatting the condition details (onset, codes, etc.) for the clinical context.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.condition import Condition as FhirCondition
 
 from enum import Enum
@@ -64,7 +74,6 @@ class ConditionCategory(str, Enum):
         }
         return definitions.get(self.value, "Definition not available.")
 
-
 class AppCondition:
     def __init__(self, raw_json_data: dict):
         self.resource = FhirCondition(**raw_json_data)
@@ -116,37 +125,34 @@ class AppCondition:
         return self.resource.abatementDateTime
 
     def to_prompt_string(self) -> str:
-        header_name = self.code_text
-        codes = self.code_details
+        name = self.code_text or "Unknown Condition"
 
-        if not header_name and not codes:
-            return ""
+        # Status Management: Print nuances only (Recurrence/Relapse).
+        # "Active" is implied as we filter beforehand.
+        status_nuance = ""
+        if self.clinical_status in [ConditionClinicalStatus.RELAPSE, ConditionClinicalStatus.RECURRENCE]:
+             status_nuance = f" ({self.clinical_status.value.capitalize()})"
 
-        status_part = ""
-        if self.clinical_status:
-            status_part = f"({self.clinical_status.value.capitalize()})"
-        
-        date_parts = []
+        # Verification Management: Mention ONLY if "Unconfirmed"
+        ver_str = ""
+        if self.verification_status == ConditionVerificationStatus.UNCONFIRMED:
+            ver_str = " (Unconfirmed)"
+
+        # Date Management: Only Onset. Abatement is irrelevant for active conditions.
+        date_str = ""
         if self.onset_date:
-            date_parts.append(f"Onset: {self.onset_date.strftime('%Y-%m-%d')}")
-        if self.abatement_date:
-            date_parts.append(f"Abated: {self.abatement_date.strftime('%Y-%m-%d')}")
-        date_part = ""
-        if date_parts:
-            date_part = f"[{', '.join(date_parts)}]"
+            date_str = f" [Onset: {self.onset_date.strftime('%Y-%m-%d')}]"
 
-        parts = [p for p in [header_name, status_part, date_part] if p]
-        header_line = f"- {' '.join(parts)}"
-
-        ref_line = ""
-        if codes:
-            code_strs = []
-            for c in codes:
-                item = f"{c['system']}: {c['code']}"
-                #if c.get('display'):
-                #    item += f" ({c['display']})"
-                code_strs.append(item)
+        # Code Management (Compact syntax)
+        code_str = ""
+        if self.code_details:
+            code_parts = []
+            for c in self.code_details:
+                code_parts.append(f"[{c['system']}: {c['code']}]")
             
-            ref_line = f"\n  Ref: {', '.join(code_strs)}"
+            if code_parts:
+                code_str = " " + " ".join(code_parts)
 
-        return header_line + ref_line
+        # Output Example: "- Stroke [Onset: 1993-12-11] [SNOMED: 230690007]"
+        return f"- {name}{status_nuance}{ver_str}{date_str}{code_str}"
+

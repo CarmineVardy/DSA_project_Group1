@@ -1,8 +1,18 @@
+'''
+Script: allergyIntolerance.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR AllergyIntolerance resource. It standardizes the representation
+of allergy information, including clinical status, verification status, categories, criticality,
+and coding details, for use in the CDSS context.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.allergyintolerance import AllergyIntolerance as FhirAllergyIntolerance
 
 from enum import Enum
 from typing import Optional, List, Dict
-from datetime import datetime
 
 from resources.core.types import AppCodeableConcept
 
@@ -120,10 +130,11 @@ class AppAllergyIntolerance:
     def category(self) -> Optional[AllergyCategory]:
         if not self.resource.category:
             return None
-        for cat in self.resource.category:
-            found_enum = AppCodeableConcept(cat).bind_to(AllergyCategory)
-            if found_enum:
-                return found_enum
+        for cat_code in self.resource.category:
+            try:
+                return AllergyCategory(cat_code)
+            except ValueError:
+                continue
         return None
 
     @property
@@ -149,43 +160,38 @@ class AppAllergyIntolerance:
 
 
     def to_prompt_string(self) -> str:
-        header_name = self.code_text
-        if not header_name and not self.code_details:
-            return ""
-
+        name = self.code_text or "Unknown Substance"
+        
+        # Meta-info (Category and Type)
         meta_parts = []
-        
-        if self.clinical_status:
-            meta_parts.append(self.clinical_status.value.capitalize())
-        
-        if self.type:
-            meta_parts.append(self.type.value.capitalize())
-            
         if self.category:
             meta_parts.append(self.category.value.capitalize())
+        if self.type:
+            meta_parts.append(self.type.value.capitalize())
+        
+        meta_str = f" ({' '.join(meta_parts)})" if meta_parts else ""
 
-        meta_str = f" ({', '.join(meta_parts)})" if meta_parts else ""
+        # Verification Status Management: Mention ONLY if "Unconfirmed"
+        ver_str = ""
+        if self.verification_status == AllergyVerificationStatus.UNCONFIRMED:
+            ver_str = " (Unconfirmed)"
 
+        # Criticality Management
         crit_str = ""
-        if self.criticality:
-            crit_val = self.criticality.value.capitalize()
-            if self.criticality == AllergyCriticality.HIGH:
-                crit_str = f" [CRITICALITY: {crit_val.upper()}]" # Uppercase per attenzione
-            else:
-                crit_str = f" [Criticality: {crit_val}]"
+        if self.criticality == AllergyCriticality.HIGH:
+            crit_str = " [CRITICAL/HIGH RISK]" 
+        elif self.criticality:
+            crit_str = f" [CRITICAL {self.criticality.value}]"
 
-        header_line = f"- {header_name or ''}{meta_str}{crit_str}"
-
-        ref_line = ""
-        codes = self.code_details
-        if codes:
-            code_strs = []
-            for c in codes:
-                item = f"{c['system']}: {c['code']}"
-                #if c.get('display'):
-                #    item += f" ({c['display']})"
-                code_strs.append(item)
+        # Code Management (Clean syntax)
+        code_str = ""
+        if self.code_details:
+            code_parts = []
+            for c in self.code_details:
+                # Direct syntax formatting
+                code_parts.append(f"[{c['system']}: {c['code']}]")
             
-            ref_line = f"\n  Ref: {', '.join(code_strs)}"
+            if code_parts:
+                code_str = " " + " ".join(code_parts)
 
-        return f"{header_line}{ref_line}"
+        return f"- {name}{meta_str}{ver_str}{crit_str}{code_str}"

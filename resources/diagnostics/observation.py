@@ -1,3 +1,14 @@
+'''
+Script: observation.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR Observation resource. It processes clinical observations,
+including vital signs, laboratory results, and social history, extracting values,
+units, dates, and relevant LOINC codes for the CDSS context.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.observation import Observation as FhirObservation
 
 from enum import Enum
@@ -102,6 +113,10 @@ class AppObservation:
         return self.resource.effectiveDateTime
 
     def _get_value_from_source(self, source) -> Optional[str]:
+        """
+        Helper method to extract a string representation of the value
+        from valueQuantity, valueCodeableConcept, or valueString.
+        """
         if source.valueQuantity:
             q = source.valueQuantity
             if q.value is None:
@@ -126,6 +141,9 @@ class AppObservation:
 
     @property
     def component_text(self) -> Optional[str]:
+        """
+        Handles observations with multiple components (e.g., Blood Pressure: Systolic/Diastolic).
+        """
         if not self.resource.component:
             return None
         items = []
@@ -137,34 +155,37 @@ class AppObservation:
         return ", ".join(items) if items else None
 
     def to_prompt_string(self) -> str:
-        header_name = self.code_text
-        value = self.value_text
-        components = self.component_text
+        # Test Name
+        name = self.code_text or "Unknown Test"
         
-        if not value and not components:
-            return ""
+        # Value (handles valueQuantity, valueString or Components)
+        value_str = ""
+        val = self.value_text
+        comps = self.component_text
+        
+        if val:
+            value_str = val
+        elif comps:
+            # For blood pressure or similar multi-component tests
+            value_str = f"[{comps}]"
+        else:
+            return "" # Useless if no result is available
 
-        meta_parts = []
-        if self.status:
-            meta_parts.append(f"({self.status.value.capitalize()})")
-        
+        # Date (Date only, no time, to save token space)
+        date_str = ""
         if self.effective_date:
-            meta_parts.append(f"[{self.effective_date.strftime('%Y-%m-%d')}]")
-        
-        header_line = f"- {header_name} {' '.join(meta_parts)}"
+            date_str = f" ({self.effective_date.strftime('%Y-%m-%d')})"
 
-        result_parts = []
-        if value:
-            result_parts.append(value)
-        if components:
-            result_parts.append(components)
-        
-        result_line = f"  Result: {', '.join(result_parts)}"
+        # Codes (Only essential LOINC codes)
+        code_str = ""
+        if self.code_details:
+             code_parts = []
+             for c in self.code_details:
+                 # We filter only LOINC for observations as it is the standard
+                 if 'loinc' in c['system'].lower():
+                     code_parts.append(f"[LOINC: {c['code']}]")
+             if code_parts:
+                 code_str = " " + " ".join(code_parts)
 
-        ref_line = ""
-        codes = self.code_details
-        if codes:
-            code_strs = [f"{c['system']}: {c['code']}" for c in codes]
-            ref_line = f"\n  Ref: {', '.join(code_strs)}"
-
-        return f"{header_line}\n{result_line}{ref_line}"
+        # Output Example: "- Hemoglobin A1c: 5.4 % (2008-03-03) [LOINC: 4548-4]"
+        return f"- {name}: {value_str}{date_str}{code_str}"

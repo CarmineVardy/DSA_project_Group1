@@ -1,14 +1,24 @@
+'''
+Script: medicationRequests.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR MedicationRequest resource. It handles prescription details,
+statuses, intents, and provides a sophisticated logic to "humanize" dosage instructions
+(converting complex FHIR timing structures into natural language) for the CDSS prompt.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.medicationrequest import MedicationRequest as FhirMedicationRequest
 
 from enum import Enum
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, TYPE_CHECKING
 from datetime import datetime
 
 from resources.core.types import AppCodeableConcept
 
-from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from .app_medication import AppMedication 
+    from .medication import AppMedication
 
 class MedicationRequestStatus(str, Enum):
    ACTIVE = "active"
@@ -25,7 +35,7 @@ class MedicationRequestStatus(str, Enum):
       #https://hl7.org/fhir/R4/valueset-medicationrequest-status.html
       definitions = {
          "active": "The prescription is 'actionable', but not all actions that are implied by it have occurred yet.",
-         "on-hold": "	Actions implied by the prescription are to be temporarily halted, but are expected to continue later. May also be called 'suspended'.",
+         "on-hold": "Actions implied by the prescription are to be temporarily halted, but are expected to continue later. May also be called 'suspended'.",
          "cancelled": "The prescription has been withdrawn before any administrations have occurred.",
          "completed": "All actions that are implied by the prescription have occurred.",
          "entered-in-error": "Some of the actions that are implied by the medication request may have occurred. For example, the medication may have been dispensed and the patient may have taken some of the medication. Clinical decision support systems should take this status into account",
@@ -60,174 +70,176 @@ class MedicationRequestIntent(str, Enum):
       }
       return definitions.get(self.value, "Definition not available.")
    
-
 class AppMedicationRequest:
-   def __init__(self, raw_json_data: dict):
-      self.resource = FhirMedicationRequest(**raw_json_data)
+    def __init__(self, raw_json_data: dict):
+        self.resource = FhirMedicationRequest(**raw_json_data)
 
-   @property
-   def id(self) -> str:
-      return self.resource.id
+    @property
+    def id(self) -> str:
+        return self.resource.id
 
-   @property
-   def status(self) -> Optional[MedicationRequestStatus]:
-      if not self.resource.status: 
-         return None
-      try: 
-         return MedicationRequestStatus(self.resource.status)
-      except ValueError: 
-         return None
+    @property
+    def status(self) -> Optional[MedicationRequestStatus]:
+        if not self.resource.status: 
+            return None
+        try: 
+            return MedicationRequestStatus(self.resource.status)
+        except ValueError: 
+            return None
 
-   @property
-   def intent(self) -> Optional[MedicationRequestIntent]:
-      if not self.resource.intent: 
-         return None
-      try: 
-         return MedicationRequestIntent(self.resource.intent)
-      except ValueError: 
-         return None
+    @property
+    def intent(self) -> Optional[MedicationRequestIntent]:
+        if not self.resource.intent: 
+            return None
+        try: 
+            return MedicationRequestIntent(self.resource.intent)
+        except ValueError: 
+            return None
 
-   @property
-   def authored_on(self) -> Optional[datetime]:
-      return self.resource.authoredOn
+    @property
+    def authored_on(self) -> Optional[datetime]:
+        return self.resource.authoredOn
 
-   @property
-   def medication_reference_id(self) -> Optional[str]:
-      if self.resource.medicationReference and self.resource.medicationReference.reference:
-         return self.resource.medicationReference.reference.split("/")[-1]
-      return None
+    @property
+    def medication_reference_id(self) -> Optional[str]:
+        if self.resource.medicationReference and self.resource.medicationReference.reference:
+            return self.resource.medicationReference.reference.split("/")[-1]
+        return None
 
-   @property
-   def medication_concept_text(self) -> Optional[str]:
-      if self.resource.medicationCodeableConcept:
-         return AppCodeableConcept(self.resource.medicationCodeableConcept).readable_value
-      return None
+    @property
+    def medication_concept_text(self) -> Optional[str]:
+        if self.resource.medicationCodeableConcept:
+            return AppCodeableConcept(self.resource.medicationCodeableConcept).readable_value
+        return None
 
-   @property
-   def medication_concept_details(self) -> List[Dict[str, Optional[str]]]:
-      if self.resource.medicationCodeableConcept:
-         return AppCodeableConcept(self.resource.medicationCodeableConcept).coding_details
-      return []
+    @property
+    def medication_concept_details(self) -> List[Dict[str, Optional[str]]]:
+        if self.resource.medicationCodeableConcept:
+            return AppCodeableConcept(self.resource.medicationCodeableConcept).coding_details
+        return []
 
-   @property
-   def dosage_text(self) -> Optional[str]:
-      """
-      Versione 'Umanizzata'.
-      - Rimuove decimali inutili (1.0 -> 1).
-      - Traduce frequenze comuni (1/1d -> Once a day).
-      - Ignora unità di misura della dose se mancanti/rotte.
-      """
-      if not self.resource.dosageInstruction:
-         return None
-      
-      all_lines = []
+    @property
+    def dosage_text(self) -> Optional[str]:
+        """
+        'Humanized' version of dosage instructions.
+        - Removes useless decimals (1.0 -> 1).
+        - Translates common frequencies (1/1d -> Once a day).
+        - Ignores broken or missing unit measures.
+        """
+        if not self.resource.dosageInstruction:
+            return None
+        
+        all_lines = []
 
-      for dosage in self.resource.dosageInstruction:
-         # 1. Priorità al testo libero
-         if dosage.text:
-               all_lines.append(dosage.text)
-               continue 
+        for dosage in self.resource.dosageInstruction:
+            # 1. Priority to free text
+            if dosage.text:
+                all_lines.append(dosage.text)
+                continue 
 
-         parts = []
+            parts = []
 
-         # --- A. DOSE (Solo il numero pulito) ---
-         if dosage.doseAndRate:
-               for dr in dosage.doseAndRate:
-                  if dr.doseQuantity and dr.doseQuantity.value is not None:
-                     val = dr.doseQuantity.value
-                     # Se è 1.0 diventa 1, se è 1.5 resta 1.5
-                     val_str = str(int(val)) if val % 1 == 0 else str(val)
-                     parts.append(val_str)
-                     break 
+            # --- A. DOSE (Clean number only) ---
+            if dosage.doseAndRate:
+                for dr in dosage.doseAndRate:
+                    if dr.doseQuantity and dr.doseQuantity.value is not None:
+                        val = dr.doseQuantity.value
+                        # If 1.0 becomes 1, if 1.5 stays 1.5
+                        val_str = str(int(val)) if val % 1 == 0 else str(val)
+                        parts.append(val_str)
+                        break 
          
-         # --- B. TIMING (Traduzione in linguaggio naturale) ---
-         if dosage.timing and dosage.timing.repeat:
-               repeat = dosage.timing.repeat
-               freq = repeat.frequency
-               period = repeat.period
-               unit = repeat.periodUnit # h, d, wk, mo
+            # --- B. TIMING (Natural language translation) ---
+            if dosage.timing and dosage.timing.repeat:
+                repeat = dosage.timing.repeat
+                freq = repeat.frequency
+                period = repeat.period
+                unit = repeat.periodUnit # h, d, wk, mo
 
-               if freq and period and unit:
-                  # Logica di traduzione casi comuni
-                  
-                  # CASO 1: Giornaliero (Once a day)
-                  # Copre: 1 volta per 1 giorno OPPURE 1 volta per 24 ore
-                  if freq == 1 and ((period == 1 and unit == 'd') or (period == 24 and unit == 'h')):
-                     parts.append("Once a day")
-                  
-                  # CASO 2: Due volte al giorno (Twice a day)
-                  elif freq == 2 and ((period == 1 and unit == 'd') or (period == 24 and unit == 'h')):
-                     parts.append("Twice a day")
-                  
-                  # CASO 3: Tre volte al giorno
-                  elif freq == 3 and ((period == 1 and unit == 'd') or (period == 24 and unit == 'h')):
-                     parts.append("3 times a day")
-                  
-                  # CASO 4: Generico "Every X hours" (es. ogni 8 ore)
-                  elif freq == 1 and unit == 'h':
-                        parts.append(f"Every {int(period)} hours")
+                if freq and period and unit:
+                    # Common cases translation logic
+                    
+                    # CASE 1: Daily (Once a day)
+                    # Covers: 1 time per 1 day OR 1 time per 24 hours
+                    if freq == 1 and ((period == 1 and unit == 'd') or (period == 24 and unit == 'h')):
+                        parts.append("Once a day")
+                    
+                    # CASE 2: Twice a day
+                    elif freq == 2 and ((period == 1 and unit == 'd') or (period == 24 and unit == 'h')):
+                        parts.append("Twice a day")
+                    
+                    # CASE 3: Three times a day
+                    elif freq == 3 and ((period == 1 and unit == 'd') or (period == 24 and unit == 'h')):
+                        parts.append("3 times a day")
+                    
+                    # CASE 4: Generic "Every X hours" (e.g. every 8 hours)
+                    elif freq == 1 and unit == 'h':
+                         parts.append(f"Every {int(period)} hours")
 
-                  # CASO 5: Fallback generico pulito (es. 3 times per week)
-                  else:
-                     unit_map = {'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month'}
-                     u_str = unit_map.get(unit, unit)
-                     if period > 1: u_str += "s" # Plurale
-                     
-                     parts.append(f"{freq} times per {int(period)} {u_str}")
+                    # CASE 5: Clean generic fallback (e.g. 3 times per week)
+                    else:
+                        unit_map = {'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month'}
+                        u_str = unit_map.get(unit, unit)
+                        if period > 1: u_str += "s" # Plural
+                        
+                        parts.append(f"{freq} times per {int(period)} {u_str}")
 
-         # Fallback codici (es. BID/TID)
-         elif dosage.timing and dosage.timing.code:
-               t_text = AppCodeableConcept(dosage.timing.code).readable_value
-               if t_text: parts.append(t_text)
+            # Code fallback (e.g. BID/TID)
+            elif dosage.timing and dosage.timing.code:
+                t_text = AppCodeableConcept(dosage.timing.code).readable_value
+                if t_text: parts.append(t_text)
 
-         # --- C. AL BISOGNO ---
-         if dosage.asNeededBoolean:
-               parts.append("As needed")
+            # --- C. AS NEEDED ---
+            if dosage.asNeededBoolean:
+                parts.append("As needed")
          
-         if parts:
-               all_lines.append(", ".join(parts))
+            if parts:
+                all_lines.append(", ".join(parts))
 
-      if not all_lines:
-         return None
-         
-      return "; ".join(all_lines)
+        if not all_lines:
+            return None
+          
+        return "; ".join(all_lines)
 
 
-   def to_prompt_string(self, medication_map: Dict[str, 'AppMedication']) -> str:
-      med_string = None
+    def to_prompt_string(self, medication_map: Dict[str, 'AppMedication']) -> str:
+        # 1. Medication Name Resolution
+        med_name_str = "Unknown Medication"
+        
+        ref_id = self.medication_reference_id
+        if ref_id and ref_id in medication_map:
+            # Case A: Reference to external Medication resource
+            med_name_str = medication_map[ref_id].to_prompt_string()
+        elif self.medication_concept_text:
+            # Case B: Inline concept
+            name = self.medication_concept_text
+            
+            # Construct code string
+            codes_str = ""
+            if self.medication_concept_details:
+                code_parts = [f"[{d['system']}: {d['code']}]" for d in self.medication_concept_details]
+                codes_str = " " + " ".join(code_parts)
+            
+            med_name_str = f"{name}{codes_str}"
 
-      ref_id = self.medication_reference_id
-      if ref_id:
-         if ref_id in medication_map:
-            med_string = medication_map[ref_id].to_prompt_string()
-         else:
-            med_string = f"Medication/{ref_id} (Details missing)"      
-      elif self.medication_concept_text:
-         name = self.medication_concept_text
-         details = self.medication_concept_details
-         codes_str = ""
-         if details:
-            code_items = [f"{d['system']}: {d['code']}" for d in details]
-            codes_str = f" ({', '.join(code_items)})"
-         med_string = f"{name}{codes_str}"
+        # 2. Date Management (AuthoredOn)
+        date_str = ""
+        if self.authored_on:
+            date_str = f" (Start: {self.authored_on.strftime('%Y-%m-%d')})"
 
-      if not med_string:
-         return ""
+        # 3. Dosage Management (Using existing dosage_text logic)
+        dosage_info = ""
+        d_text = self.dosage_text
+        if d_text:
+            # Indent dosage for visual clarity
+            dosage_info = f"\n  Sig: {d_text}"
 
-      meta_parts = []
-      if self.status:
-         meta_parts.append(self.status.value.capitalize())
-      # Intent è spesso ridondante se è "Order", lo mettiamo solo se particolare
-      # if self.intent and self.intent != MedicationRequestIntent.ORDER:
-      #    meta_parts.append(self.intent.value)
-      if self.authored_on:
-         meta_parts.append(f"[{self.authored_on.strftime('%Y-%m-%d')}]")
+        # 4. Status On-Hold (If active we don't write it, it's the section default)
+        status_warning = ""
+        if self.status == MedicationRequestStatus.ON_HOLD:
+            status_warning = " [STATUS: ON-HOLD/SUSPENDED]"
 
-      meta_str = f" ({', '.join(meta_parts)})" if meta_parts else ""
-
-      dosage_str = ""
-      d_text = self.dosage_text
-      if d_text:
-         dosage_str = f"\n  Dosage: {d_text}"
-
-      return f"- {med_string}{meta_str}{dosage_str}"
+        # Output Example: 
+        # "- Simvastatin 10 MG [RxNorm: 314231] (Start: 2008-03-03)
+        #    Sig: 1, Once a day"
+        return f"- {med_name_str}{date_str}{status_warning}{dosage_info}"

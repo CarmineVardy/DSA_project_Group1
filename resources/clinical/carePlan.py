@@ -1,3 +1,14 @@
+'''
+Script: carePlan.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR CarePlan resource. It manages care plan details,
+including status, intent, active periods, and the summary of planned activities
+to be included in the patient's clinical context.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.careplan import CarePlan as FhirCarePlan
 
 from enum import Enum
@@ -154,42 +165,51 @@ class AppCarePlan:
 
             results.append({
                 'text': act_text,
-                'status': safe_status, #Can be none
+                'status': safe_status, # Can be None
                 'codes': act_codes
             })
             
         return results
 
     def to_prompt_string(self) -> str:
-        activities = self.activities_summary
-        
-        if not activities:
+        if not self.activities_summary:
             return ""
 
-        header_name = self.category_text or self.title or ""
-        
-        meta_parts = []
-        if self.status:
-            meta_parts.append(self.status.value.capitalize())
-        
-        if self.start_date:
-            meta_parts.append(f"Start: {self.start_date.strftime('%Y-%m-%d')}")
-            
-        header_line = f"- {header_name} ({', '.join(meta_parts)})"
+        # Plan Header: **Plan Name** (Start: YYYY-MM-DD)
+        header_name = self.category_text or "General Care Plan"
+        date_info = f" (Start: {self.start_date.strftime('%Y-%m-%d')})" if self.start_date else ""
+        header_line = f"**{header_name}**{date_info}"
 
+        # Build Activities (with Deduplication)
         activity_lines = []
-        activity_lines.append("  Activities:")
-        
-        for act in activities:
+        seen_activities = set() # Avoid duplicates
+
+        for act in self.activities_summary:
+            text = act['text']
+            
+            # Skip duplicates or empty text
+            if not text or text in seen_activities:
+                continue
+            seen_activities.add(text)
+
+            # Activity Status Management
             status_str = ""
             if act['status']:
-                status_str = f" ({act['status'].value})" 
-            
-            act_line = f"  * {act['text']}{status_str}"
-            activity_lines.append(act_line)
-            
+                status_str = f" ({act['status'].value})"
+
+            # Code Management (Clean syntax)
+            code_str = ""
             if act['codes']:
-                code_strs = [f"{c['system']}: {c['code']}" for c in act['codes']]
-                activity_lines.append(f"    Ref: {', '.join(code_strs)}")
+                code_parts = []
+                for c in act['codes']:
+                    code_parts.append(f"[{c['system']}: {c['code']}]")
+                if code_parts:
+                    code_str = " " + " ".join(code_parts)
+
+            # Final Line: - Activity Name (Status) [System: Code]
+            activity_lines.append(f"- {text}{status_str}{code_str}")
+
+        if not activity_lines:
+            return ""
 
         return f"{header_line}\n" + "\n".join(activity_lines)

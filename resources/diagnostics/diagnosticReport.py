@@ -1,3 +1,14 @@
+'''
+Script: diagnosticReport.py
+Digital Health Systems and Applications - Project work 2025-2026
+Description:
+Wrapper class for the HL7 FHIR DiagnosticReport resource. It handles the extraction
+of report status, categories, codes, and most importantly, the decoding of
+embedded Base64 clinical notes (presentedForm) for LLM context injection.
+
+Group: Carmine Vardaro, Marco Savastano, Francesco Ferrara.
+'''
+
 from fhir.resources.diagnosticreport import DiagnosticReport as FhirDiagnosticReport
 
 import base64
@@ -36,7 +47,6 @@ class DiagnosticReportStatus(str, Enum):
         }
         return definitions.get(self.value, "Definition not available.")
     
-
 class AppDiagnosticReport:
     
     def __init__(self, raw_json_data: dict):
@@ -76,18 +86,22 @@ class AppDiagnosticReport:
 
     @property
     def effective_date(self) -> Optional[datetime]:
-        return self.resource.effectiveDateTime	
-
+        return self.resource.effectiveDateTime  
 
     @property
     def report_text(self) -> Optional[str]:
-        
+        """
+        Extracts the textual content of the report. 
+        It prioritizes the 'conclusion' field, then falls back to decoding 
+        base64 'presentedForm' attachments (text/plain).
+        """
         if self.resource.conclusion:
             return self.resource.conclusion
 
         if self.resource.presentedForm:
             for attachment in self.resource.presentedForm:
                 
+                # We only process plain text attachments
                 if not attachment.contentType or not attachment.contentType.startswith("text/plain"):
                     continue
                 
@@ -99,6 +113,7 @@ class AppDiagnosticReport:
                     decoded_bytes = base64.b64decode(b64_string)
                     raw_text = decoded_bytes.decode('utf-8')
                     
+                    # Basic cleaning of empty lines
                     clean_lines = [line.strip() for line in raw_text.splitlines() if line.strip()]
                     return "\n".join(clean_lines)
                 except Exception:
@@ -107,33 +122,28 @@ class AppDiagnosticReport:
         return None
 
     def to_prompt_string(self) -> str:
-        """
-        Formatta il report per il prompt.
-        Format:
-        - Nome Report (Ref: System: Code):
-          [Contenuto indentato]
-        """
-        # 1. Recupera il contenuto testuale
+        # If no decoded text is available, skip
         text_content = self.report_text
         if not text_content:
             return ""
 
-        # 2. Costruisce la parte dei riferimenti (Ref)
-        ref_part = ""
-        codes = self.code_details
-        if codes:
-            code_strs = []
-            for c in codes:
-                code_strs.append(f"{c['system']}: {c['code']}")
-            ref_part = f" (Ref: {', '.join(code_strs)})"
+        title = self.code_text or "Clinical Note"
 
-        # 3. Costruisce l'Header completo con i due punti finali
-        # Esempio: - History and physical note (Ref: LOINC: 34117-2):
-        header_name = self.code_text or ""
-        header_line = f"- {header_name}{ref_part}:"
+        # TEXT CLEANING (Crucial for token optimization)
+        # Synthea raw text often contains Markdown headers (# Chief Complaint)
+        # and repetitions. We compact it while keeping key sections.
+        
+        lines = [line.strip() for line in text_content.splitlines() if line.strip()]
+        
+        # Remove consecutive duplicate lines (common in generated reports)
+        cleaned_lines = []
+        last_line = ""
+        for line in lines:
+            if line != last_line:
+                cleaned_lines.append(line)
+                last_line = line
+        
+        # Rejoin with indentation for readability in the prompt
+        content = "\n  ".join(cleaned_lines) 
 
-        # 4. Indentazione del Contenuto
-        indented_lines = [f"  {line}" for line in text_content.splitlines()]
-        formatted_content = "\n".join(indented_lines)
-
-        return f"{header_line}\n{formatted_content}\n"
+        return f"**{title}**:\n  {content}\n"
